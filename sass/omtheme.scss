@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Blender Pro Bold';
-  src: url("./fonts/BLENDER-PRO-BOLD.OTF"); }
-
+  src: url('./fonts/BLENDER-PRO-BOLD.OTF');
+}
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -9,8 +9,8 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-
+  background-size: cover;
+}
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -18,21 +18,23 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
-
+  background-size: cover;
+}
 .carousel-indicators li {
   width: 16px !important;
   height: 16px !important;
-  border-radius: 100%; }
-
+  border-radius: 100%;
+}
 .carousel-caption {
-  bottom: 45% !important; }
-
+  bottom: 45% !important;
+}
 .navbar-toggler {
-  border: none !important; }
+  border: none !important;
+}
 
 footer {
-  background-color: #000; }
-
+  background-color: #000;
+}
 .footer-menu:first-child {
-  font-weight: bold; }
+  font-weight: bold;
+}

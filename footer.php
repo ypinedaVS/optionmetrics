@@ -1,13 +1,30 @@
-    <footer>
+    <footer class="p-3">
       <div class="container" style="max-width:1600px">
-        <div class="row justify-content-md-center">
-          <div class="col-md-2">
+        <div class="row justify-content-md-around justify-content-xl-center">
+          <div class="col-6 d-flex align-items-center mb-4">
+            <a href="/" class="nav d-xl-none">
+              <img src="<?php gtdu('/assets/logo_white.png'); ?>" alt="Logo">
+            </a>
+          </div>
+          <div class="col-6 d-flex justify-content-end mb-4">
+            <ul class="nav d-xl-none">
+              <?php echo wp_nav_menu( array(
+                'theme_location'  => 'social-menu',
+                'menu'            => 'Social Navigation',
+                'container'       => false,
+                'echo'            => false,
+                'items_wrap'      => '%3$s',
+                'depth'           => 0,
+              )); ?>
+            </ul>
+          </div>
+          <div class="col-md-auto d-none d-xl-block">
             <a href="/">
               <img src="<?php gtdu('/assets/logo_white.png'); ?>" alt="Logo">
             </a>
           </div>
-          <div class="col-md-auto">
-            <div class="list-group" id="list-tab-about" role="tablist">
+          <div class="col-5 col-md-auto">
+            <div class="list-group mb-5" id="list-tab-about" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
                 'menu'            => 'Footer About Navigation',
@@ -18,8 +35,8 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-md-auto">
-            <div class="list-group" id="list-tab-data-products" role="tablist">
+          <div class="col-7 col-md-auto">
+            <div class="list-group mb-5" id="list-tab-data-products" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
                 'menu'            => 'Footer Data Products Navigation',
@@ -30,8 +47,8 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-md-auto">
-            <div class="list-group" id="list-tab-news-events" role="tablist">
+          <div class="col-5 col-md-auto">
+            <div class="list-group mb-5" id="list-tab-news-events" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
                 'menu'            => 'Footer News & Events Navigation',
@@ -42,8 +59,8 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-md-auto">
-            <div class="list-group" id="list-tab-contact" role="tablist">
+          <div class="col-3 col-md-auto">
+            <div class="list-group mb-5" id="list-tab-contact" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
                 'menu'            => 'Footer Contact Navigation',
@@ -54,8 +71,8 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-md-auto">
-            <div class="list-group" id="list-tab-legal" role="tablist">
+          <div class="col-4 col-md-auto">
+            <div class="list-group mb-5" id="list-tab-legal" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
                 'menu'            => 'Footer Legal Navigation',
@@ -66,16 +83,19 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-md-2 d-flex justify-content-end">
+          <div class="col-md-auto justify-content-end d-none d-xl-block">
             <ul class="nav">
-              <li class="nav-item"><a href="#" class="nav-link px-1"><img src="<?php gtdu('/assets/Icon_Linkedin.png'); ?>" alt="LinkedIn"></a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-1"><img src="<?php gtdu('/assets/Icon_Twitter.png'); ?>" alt=""></a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-1"><img src="<?php gtdu('/assets/Icon_Linkedin.png'); ?>" alt=""></a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-1"><img src="<?php gtdu('/assets/Icon_Linkedin.png'); ?>" alt=""></a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-1"><img src="<?php gtdu('/assets/Icon_Linkedin.png'); ?>" alt=""></a></li>
+              <?php echo wp_nav_menu( array(
+                'theme_location'  => 'social-menu',
+                'menu'            => 'Social Navigation',
+                'container'       => false,
+                'echo'            => false,
+                'items_wrap'      => '%3$s',
+                'depth'           => 0,
+              )); ?>
             </ul>
           </div>
-          <div class="col-md-12 text-center">Copyright © 2016-2018 OptionMetrics, LLC</div>
+          <div class="col-md-12 text-center rights mt-5 mb-3">Copyright © 2016-2018 OptionMetrics, LLC</div>
         </div>
       </div>
     </footer>

@@ -9,6 +9,8 @@ function omtheme_script_enqueue()
   wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.js', array('jquery'), '4.1.1', true );
   wp_enqueue_script( 'burger', get_template_directory_uri() . '/js/burger.js', array('jquery'), '0.0.1', true );
   wp_enqueue_script( 'country', get_template_directory_uri() . '/js/country.js', array('jquery'), '0.0.1', true );
+  wp_enqueue_script( 'affix', get_template_directory_uri() . '/js/affix.js', array('jquery'), '0.0.1', true );
+  wp_enqueue_script( 'social', get_template_directory_uri() . '/js/social.js', array('jquery'), '0.0.1', true );
 }
 add_action( 'wp_enqueue_scripts', 'omtheme_script_enqueue' );
 
@@ -18,10 +20,7 @@ function omtheme_setup()
   add_theme_support( 'post-thumbnails' );
   register_nav_menu( 'primary', 'Primary Header Navigation' );
   register_nav_menu( 'footer-menu', 'Footer Navigation' );
-  // register_nav_menu( 'footer-data-products', 'Footer Data Products Navigation' );
-  // register_nav_menu( 'footer-news_events', 'Footer News & Events Navigation' );
-  // register_nav_menu( 'footer-contact', 'Footer Contact Navigation' );
-  // register_nav_menu( 'footer-legal', 'Footer Legal Navigation' );
+  register_nav_menu( 'social-menu', 'Social Navigation' );
 }
 add_action( 'init', 'omtheme_setup' );
 
@@ -36,7 +35,7 @@ function add_link_atts( $atts, $item, $args )
 {
   if( $args->theme_location == 'primary' )
   {
-    $atts['class'] = 'nav-link text-white';
+    $atts['class'] = 'nav-link text-white ml-lg-4';
   }
   if( $args->theme_location == 'footer-about' )
   {

@@ -2,14 +2,93 @@
   font-family: 'Blender Pro Bold';
   src: url("./fonts/BLENDER-PRO-BOLD.OTF"); }
 
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url("./fonts/MONTSERRAT-MEDIUM_0.TTF"); }
+
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url("./fonts/Montserrat-Light.ttf"); }
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url("./fonts/LATO-LIGHT.TTF"); }
+
+.navbar {
+  transition: all 0.1s ease-out; }
+  .navbar .navbar-brand img {
+    height: 36px; }
+  .navbar.affix {
+    background-color: #ffffff; }
+  .navbar .navbar-nav li a {
+    font-family: 'Montserrat Medium';
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase; }
+  .navbar .navbar-nav li:first-child {
+    padding-top: 1.5rem; }
+
+.bg-light-custom {
+  background-color: #ececec !important; }
+
+.news-wrapper {
+  padding: 35px !important; }
+
+.characteristics {
+  font-family: 'Montserrat Medium';
+  font-size: 16px;
+  color: #1A1A1A; }
+  @media (min-width: 768px) {
+    .characteristics {
+      font-size: 20px; } }
+
+.text-blue {
+  color: #21334A !important; }
+
+.text-blue-dark {
+  color: #0D3049 !important; }
+
+.text-text-dark {
+  color: #1A1A1A !important; }
+
+.text-text {
+  color: #333333 !important; }
+
+.news-title {
+  font-size: 22px;
+  font-family: 'Montserrat Medium'; }
+  .news-title.mini {
+    font-size: 14px; }
+
+.news-text {
+  font-family: 'Lato Light';
+  font-size: 22px; }
+  .news-text.mini {
+    font-size: 16px; }
+
+.fa-social a {
+  color: #e0e0e0 !important;
+  font-size: 30px;
+  margin-left: 10px; }
+
+.btn {
+  font-family: 'Montserrat Light';
+  font-weight: 300;
+  height: 70px;
+  font-size: 20px !important; }
+  @media (max-width: 599px) {
+    .btn {
+      display: block !important;
+      width: 100%; } }
+  .btn.btn-warning {
+    background-color: #F1CB3B; }
+  .btn.medium {
+    font-family: 'Montserrat Medium'; }
+  @media (min-width: 768px) {
+    .btn {
+      padding-left: 20px !important;
+      padding-right: 20px !important; } }
 
 .carousel-item {
   height: 100vh;
@@ -25,14 +104,75 @@
   height: 16px !important;
   border-radius: 100%; }
 
-.carousel-caption {
-  bottom: 45% !important; }
+.carousel-caption .home-title {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Blender Pro Bold'; }
+  @media (min-width: 992px) {
+    .carousel-caption .home-title {
+      font-size: 75px;
+      letter-spacing: 10px; } }
 
 .navbar-toggler {
   border: none !important; }
 
 footer {
-  background-color: #000; }
+  background-color: #020612; }
 
-.footer-menu:first-child {
+.footer-menu {
+  background-color: transparent !important;
+  font-family: 'Montserrat Light';
+  color: #B0AFAF !important;
+  border: none !important;
+  padding-left: 0.1rem !important;
+  padding-right: 0.1rem !important; }
+  .footer-menu:first-child {
+    font-weight: bold;
+    font-family: 'Montserrat Medium'; }
+
+.section-title {
+  color: #0D3049;
+  font-size: 40px;
+  font-family: 'Montserrat Medium';
   font-weight: bold; }
+  .section-title.mini {
+    font-size: 30px; }
+
+.section-text {
+  color: #333333;
+  font-family: 'Lato Light';
+  font-size: 24px;
+  font-weight: 300; }
+
+.nav-tabs .nav-item {
+  margin-bottom: 0px !important;
+  font-family: 'Montserrat Medium'; }
+  .nav-tabs .nav-item.nav-item-country {
+    height: 37px;
+    padding: 0.5rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: 1px solid #606060;
+    opacity: 0.5; }
+    .nav-tabs .nav-item.nav-item-country.active {
+      border-color: transparent !important;
+      background-color: #0D3049;
+      color: #ffffff !important;
+      opacity: 1; }
+    @media (min-width: 480px) {
+      .nav-tabs .nav-item.nav-item-country {
+        width: 80px;
+        text-align: center; } }
+
+.nav-tabs .nav-link {
+  color: #606060; }
+  .nav-tabs .nav-link.active {
+    border: none;
+    color: #0D3049 !important;
+    border-bottom: 6px solid #F1CB3B !important; }
+
+.rights {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Lato Light'; }

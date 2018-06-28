@@ -8,8 +8,20 @@
       height: 36px;
     }
   }
+  .logo {
+    display: block;
+  }
+  .logo_toggle {
+    display: none;
+  }
   &.affix {
     background-color: $white;
+    .logo {
+      display: none;
+    }
+    .logo_toggle {
+      display: block;
+    }
   }
   .navbar-nav {
     li {
@@ -77,6 +89,18 @@
     color: lighten($grey, 50%) !important;
     font-size: 30px;
     margin-left: 10px;
+  }
+}
+
+.masthead {
+  height: 100vh;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  .masthead-bg {
+    width: 100%;
+    color: $white;
   }
 }
 

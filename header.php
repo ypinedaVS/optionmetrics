@@ -9,8 +9,9 @@
   <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" data-spy="affix" data-offset-top="50">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="optionmetrics logo" id="header-logo" />
+        <a class="navbar-brand js-scroll-trigger" href="<?php echo get_home_url(); ?>">
+          <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo.png" alt="optionmetrics logo" id="header-logo" />
+          <img class="logo_toggle" src="<?php echo get_template_directory_uri(); ?>/assets/logo_toggle_menu.png" alt="optionmetrics logo" id="header-logo" />
         </a>
         <button class="navbar-toggler navbar-toggler-right collapsed text-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span id="menu-bars" class="fa fa-bars"></span>

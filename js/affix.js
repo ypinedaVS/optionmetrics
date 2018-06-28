@@ -6,13 +6,11 @@ jQuery(document).ready(function($) {
       $('.navbar').addClass('affix')
       $('.navbar-toggler').addClass('text-blue').removeClass('text-white')
       $('#navbarResponsive ul li a').addClass('text-blue').removeClass('text-white')
-      $('#header-logo').attr('src', 'wp-content/themes/omtheme/assets/logo_toggle_menu.png')
     } else {
       if ($('.navbar-toggler').hasClass('collapsed')) {
         $('.navbar').removeClass('affix')
         $('.navbar-toggler').removeClass('text-blue').addClass('text-white')
         $('#navbarResponsive ul li a').removeClass('text-blue').addClass('text-white')
-        $('#header-logo').attr('src', 'wp-content/themes/omtheme/assets/logo.png')
       }
     }
   })

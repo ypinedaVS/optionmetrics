@@ -18,8 +18,16 @@
   transition: all 0.1s ease-out; }
   .navbar .navbar-brand img {
     height: 36px; }
+  .navbar .logo {
+    display: block; }
+  .navbar .logo_toggle {
+    display: none; }
   .navbar.affix {
     background-color: #ffffff; }
+    .navbar.affix .logo {
+      display: none; }
+    .navbar.affix .logo_toggle {
+      display: block; }
   .navbar .navbar-nav li a {
     font-family: 'Montserrat Medium';
     font-weight: 600;
@@ -71,6 +79,16 @@
   color: #e0e0e0 !important;
   font-size: 30px;
   margin-left: 10px; }
+
+.masthead {
+  height: 100vh;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: no-repeat center center scroll;
+  background-size: cover; }
+  .masthead .masthead-bg {
+    width: 100%;
+    color: #ffffff; }
 
 .btn {
   font-family: 'Montserrat Light';

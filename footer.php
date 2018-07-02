@@ -1,12 +1,12 @@
-    <footer class="p-3">
+    <footer class="px-3 py-5">
       <div class="container" style="max-width:1600px">
         <div class="row justify-content-md-around justify-content-xl-center">
-          <div class="col-6 d-flex align-items-center mb-4">
+          <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start align-items-center mb-4">
             <a href="/" class="nav d-xl-none">
-              <img src="<?php gtdu('/assets/logo_white.png'); ?>" alt="Logo">
+              <img src="<?php gtdu('/assets/logo.png'); ?>" alt="Logo" />
             </a>
           </div>
-          <div class="col-6 d-flex justify-content-end mb-4">
+          <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end mb-4 align-items-center">
             <ul class="nav d-xl-none">
               <?php echo wp_nav_menu( array(
                 'theme_location'  => 'social-menu',
@@ -20,10 +20,10 @@
           </div>
           <div class="col-md-auto d-none d-xl-block">
             <a href="/">
-              <img src="<?php gtdu('/assets/logo_white.png'); ?>" alt="Logo">
+              <img src="<?php gtdu('/assets/logo.png'); ?>" alt="Logo">
             </a>
           </div>
-          <div class="col-5 col-md-auto">
+          <div class="col-4 col-md-auto">
             <div class="list-group mb-5" id="list-tab-about" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
@@ -35,7 +35,7 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-7 col-md-auto">
+          <div class="col-4 col-md-auto">
             <div class="list-group mb-5" id="list-tab-data-products" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
@@ -47,7 +47,7 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-5 col-md-auto">
+          <div class="col-4 col-md-auto">
             <div class="list-group mb-5" id="list-tab-news-events" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
@@ -59,7 +59,19 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-3 col-md-auto">
+          <div class="col-4 col-md-auto">
+            <div class="list-group mb-5" id="list-tab-contact" role="tablist">
+              <?php echo strip_tags( wp_nav_menu( array(
+                'theme_location'  => 'footer-about',
+                'menu'            => 'Footer Research Navigation',
+                'container'       => false,
+                'echo'            => false,
+                'items_wrap'      => '%3$s',
+                'depth'           => 0,
+              )), '<a>'); ?>
+            </div>
+          </div>
+          <div class="col-4 col-md-auto">
             <div class="list-group mb-5" id="list-tab-contact" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',

@@ -52,9 +52,6 @@
 .text-text {
   color: #000000 !important; }
 
-.text-grey-dark {
-  color: #1A1A1A !important; }
-
 .text-grey {
   color: #333333 !important; }
 
@@ -83,7 +80,7 @@
       font-size: 28px; }
       @media (min-width: 768px) {
         .btn.btn-main-slider.btn-get-started {
-          width: 200px;
+          width: 200px !important;
           height: initial;
           font-size: initial; } }
   .btn.btn-warning {
@@ -102,9 +99,6 @@
   @media (min-width: 768px) {
     .section-text {
       font-size: 15px; } }
-  @media (min-width: 1200px) {
-    .section-text {
-      padding-right: 200px; } }
 
 .bg-light-custom {
   background-color: #f2f2f2 !important; }
@@ -127,7 +121,6 @@
     .navbar.affix .logo_toggle {
       display: block; }
   .navbar .navbar-nav li a {
-    font-family: 'Montserrat Medium';
     font-weight: 600;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -161,6 +154,11 @@
   padding-bottom: 0px;
   background: no-repeat center center scroll;
   background-size: cover; }
+  .masthead.masthead-part {
+    height: 60vh; }
+    @media (min-width: 768px) {
+      .masthead.masthead-part {
+        height: 100vh; } }
   .masthead .masthead-bg {
     width: 100%;
     color: #ffffff; }
@@ -184,13 +182,13 @@
   .carousel-indicators.blue li.active {
     background-color: #0D3049; }
 
-.home-title {
-  font-size: 50px;
+.page-hero-title {
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: normal; }
   @media (min-width: 768px) {
-    .home-title {
-      font-size: 75px; } }
+    .page-hero-title {
+      font-size: 80px; } }
 
 .navbar-toggler {
   border: none !important; }
@@ -199,17 +197,9 @@
 .partner-name,
 .partner-position,
 .partner-description {
-  font-family: 'Montserrat Medium';
   font-weight: bold;
   color: #0D3049;
   font-size: 40px; }
-
-.partner-form-title {
-  font-size: 33px; }
-  .partner-form-title + .partner-form-description {
-    font-size: 18px;
-    font-weight: normal;
-    font-family: 'Montserrat Light'; }
 
 .partners-indicators {
   top: 320px;
@@ -217,19 +207,18 @@
 
 .partner-wrapper {
   padding: 30px 20px;
-  background-color: #606060;
+  background-color: #F3F3F3;
   border-radius: 10px; }
   .partner-wrapper .partner-name {
-    font-size: 25px; }
+    font-size: 18px; }
     .partner-wrapper .partner-name + .partner-position {
       font-weight: normal;
-      font-size: 16px;
+      font-size: 12px;
       text-transform: uppercase;
       font-style: italic; }
       .partner-wrapper .partner-name + .partner-position + .partner-description {
-        font-family: 'Montserrat Light';
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         color: #000000; }
 
 .mt-70 {
@@ -246,7 +235,7 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 20px solid #606060;
+  border-bottom: 20px solid #F3F3F3;
   border-radius: 5px; }
 
 .partner-img {
@@ -272,8 +261,10 @@
     max-width: 1600px !important; } }
 
 .page-wrapper-up {
-  top: -150px;
   background-color: #ffffff; }
+  @media (min-width: 768px) {
+    .page-wrapper-up {
+      top: -150px; } }
 
 footer {
   background-color: #052D47; }
@@ -282,6 +273,7 @@ footer {
   background-color: transparent !important;
   font-family: 'Montserrat Light';
   color: #ffffff !important;
+  font-size: 13px !important;
   border: none !important;
   padding-left: 0.1rem !important;
   padding-right: 0.1rem !important; }
@@ -290,7 +282,6 @@ footer {
     font-family: 'Montserrat Medium'; }
 
 .page-feature-title {
-  font-family: 'Montserrat Medium';
   font-size: 16px;
   color: #0D3049; }
 

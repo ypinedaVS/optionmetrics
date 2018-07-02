@@ -13,9 +13,6 @@
 .text-text {
   color: $text !important;
 }
-.text-grey-dark {
-  color: $grey-dark !important;
-}
 .text-grey {
   color: $grey !important;
 }
@@ -45,7 +42,7 @@
       height: 75px;
       font-size: 28px;
       @media (min-width: 768px) {
-        width: 200px;
+        width: 200px !important;
         height: initial;
         font-size: initial;
       }
@@ -70,9 +67,6 @@
   font-size: 15px;
   @media (min-width: 768px) {
     font-size: 15px;
-  }
-  @media (min-width: 1200px) {
-    padding-right: 200px;
   }
 }
 
@@ -123,7 +117,6 @@
   .navbar-nav {
     li {
       a {
-        font-family: 'Montserrat Medium';
         font-weight: 600;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -136,19 +129,9 @@
   }
 }
 
-
 .news-wrapper {
   padding: 35px !important;
 }
-
-// .characteristics {
-//   font-family: 'Montserrat Medium';
-//   font-size: 16px;
-//   color: $text-dark;
-//   @media (min-width: 768px) {
-//     font-size: 20px;
-//   }
-// }
 
 .news-text {
   font-family: 'Lato Light';
@@ -176,10 +159,16 @@
   padding-bottom: 0px;
   background: no-repeat center center scroll;
   background-size: cover;
+  &.masthead-part {
+    height: 60vh;
+    @media (min-width: 768px) {
+      height: 100vh;
+    }
+  }
   .masthead-bg {
     width: 100%;
     color: $white;
-    }
+  }
 }
 
 
@@ -209,12 +198,12 @@
     }
   }
 }
-.home-title {
-  font-size: 50px;
+.page-hero-title {
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: normal;
   @media (min-width: 768px) {
-    font-size: 75px;
+    font-size: 80px;
   }
 }
 .navbar-toggler {
@@ -225,19 +214,18 @@
 .partner-name,
 .partner-position,
 .partner-description {
-  font-family: 'Montserrat Medium';
   font-weight: bold;
   color: $blue-dark;
   font-size: 40px;
 }
-.partner-form-title {
-  font-size: 33px;
-  &+.partner-form-description {
-    font-size: 18px;
-    font-weight: normal;
-    font-family: 'Montserrat Light';
-  }
-}
+// .partner-form-title {
+//   font-size: 33px;
+//   &+.partner-form-description {
+//     font-size: 18px;
+//     font-weight: normal;
+//     font-family: 'Montserrat Light';
+//   }
+// }
 
 .partners-indicators {
   top: 320px;
@@ -248,16 +236,15 @@
   background-color: $grey-light;
   border-radius: 10px;
   .partner-name {
-    font-size: 25px;
+    font-size: 18px;
     &+.partner-position {
       font-weight: normal;
-      font-size: 16px;
+      font-size: 12px;
       text-transform: uppercase;
       font-style: italic;
       &+.partner-description {
-        font-family: 'Montserrat Light';
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         color: $text;
       }
     }
@@ -306,8 +293,10 @@
   }
 }
 .page-wrapper-up {
-  top: -150px;
   background-color: $white;
+  @media (min-width: 768px) {
+    top: -150px;
+  }
 }
 
 footer {
@@ -317,6 +306,7 @@ footer {
   background-color: transparent !important;
   font-family: 'Montserrat Light';
   color: $white !important;
+  font-size: 13px !important;
   border: none !important;
   padding-left: 0.1rem !important;
   padding-right: 0.1rem !important;
@@ -326,7 +316,6 @@ footer {
   }
 }
 .page-feature-title {
-  font-family: 'Montserrat Medium';
   font-size: 16px;
   color: $blue-dark;
 }

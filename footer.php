@@ -23,7 +23,7 @@
               <img src="<?php gtdu('/assets/logo.png'); ?>" alt="Logo">
             </a>
           </div>
-          <div class="col-4 col-md-auto">
+          <div class="col-4 col-lg-auto">
             <div class="list-group mb-5" id="list-tab-about" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
@@ -35,7 +35,7 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-4 col-md-auto">
+          <div class="col-4 col-lg-auto">
             <div class="list-group mb-5" id="list-tab-data-products" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
@@ -47,7 +47,7 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-4 col-md-auto">
+          <div class="col-4 col-lg-auto">
             <div class="list-group mb-5" id="list-tab-news-events" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
@@ -59,7 +59,7 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-4 col-md-auto">
+          <div class="col-4 col-lg-auto">
             <div class="list-group mb-5" id="list-tab-contact" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
@@ -71,7 +71,7 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-4 col-md-auto">
+          <div class="col-4 col-lg-auto">
             <div class="list-group mb-5" id="list-tab-contact" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',
@@ -83,7 +83,7 @@
               )), '<a>'); ?>
             </div>
           </div>
-          <div class="col-4 col-md-auto">
+          <div class="col-4 col-lg-auto">
             <div class="list-group mb-5" id="list-tab-legal" role="tablist">
               <?php echo strip_tags( wp_nav_menu( array(
                 'theme_location'  => 'footer-about',

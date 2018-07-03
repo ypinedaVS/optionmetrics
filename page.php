@@ -218,7 +218,8 @@
     </div>
   </div>
   <div class="row m-0 p-5" style="background-image:url(<?php gtdu('/assets/partners-form-bg.png'); ?>);background-size:cover">
-    <div class="col-12 text-center">
+    <div class="container">
+      <div class="col-12 text-center">
       <p class="section-title text-white montserrat-regular h4 mb-4">Be part of an exceptionally creative and intelligent team</p>
       <p class="text-white lato-light mb-4">OptionMetrics is hiring. Be part  of developers, quants and econometrics specialists collaborating on proprietary next-gen data and analytic products. We encourage true ownership over projects and reward innovation. Join the company distinguished by its passion for volatility, data and analytic excellence and the esteemed caliber of its clients, including hedge fund managers, institutional investors and academic institutions. Take your career to new heights.</p>
       <div class="d-lg-none">
@@ -276,23 +277,26 @@
       </form>
       </div>
     </div>
+    </div>
   </div>
   <div class="container text-center p-5">
-    <div class="col-sm-6 mb-5">
-      <img class="img-fluid" src="<?php gtdu('/assets/Image_BusinessAnalyst.png'); ?>" alt="Business" />
-      <p class="text-center montserrat-medium text-blue mt-2 mb-0">Business Analyst</p>
-      <button class="btn btn-link montserrat-medium text-blue">
-        see positions
-        <span class="fa fa-angle-double-right"></span>
-      </button>
-    </div>
-    <div class="col-sm-6">
-      <img class="img-fluid" src="<?php gtdu('/assets/Image_SeniorSoftwareDeveloper.png'); ?>" alt="Developer" />
-      <p class="text-center montserrat-medium text-blue mt-2 mb-0">Business Analyst</p>
-      <button class="btn btn-link montserrat-medium text-blue">
-        see positions
-        <span class="fa fa-angle-double-right"></span>
-      </button>
+    <div class="row">
+      <div class="col-sm-6 mb-5">
+        <img class="img-fluid" src="<?php gtdu('/assets/Image_BusinessAnalyst.png'); ?>" alt="Business" />
+        <p class="text-center montserrat-medium text-blue mt-2 mb-0">Business Analyst</p>
+        <button class="btn btn-link montserrat-medium text-blue">
+          see positions
+          <span class="fa fa-angle-double-right"></span>
+        </button>
+      </div>
+      <div class="col-sm-6">
+        <img class="img-fluid" src="<?php gtdu('/assets/Image_SeniorSoftwareDeveloper.png'); ?>" alt="Developer" />
+        <p class="text-center montserrat-medium text-blue mt-2 mb-0">Business Analyst</p>
+        <button class="btn btn-link montserrat-medium text-blue">
+          see positions
+          <span class="fa fa-angle-double-right"></span>
+        </button>
+      </div>
     </div>
   </div>
   <?php endif; ?>

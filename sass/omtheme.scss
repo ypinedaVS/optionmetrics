@@ -405,6 +405,31 @@ footer {
     }
   }
 }
+
+.card{
+  border: none!important;
+    @media (max-width: 480px) {
+    .nav-item .nav-graph-link {
+      color: #000;
+      display: flex!important;
+      border-radius: 5px;
+      text-decoration: none;
+      width: 100%;
+      &:hover{
+        background-color: $grey-light;
+        box-shadow: 2px 2px 5px #888888
+      }
+      img{
+        width: 15%;
+        height: 15%;
+      }
+      p{
+        margin: auto 0;
+      }
+    }
+  }
+}
+
 .wuo-img {
   text-align: center;
   img {

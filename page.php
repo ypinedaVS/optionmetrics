@@ -309,6 +309,16 @@
   <!-- /Data Products page -->
 
   <!-- News & Events page -->
+  <?php if ( is_page( 'news-events') ) : ?>
+  <div class="container">
+    <div class="position-relative page-wrapper-up">
+      <div class="row">
+        
+      </div>
+    </div>
+  </div>
+
+  <?php endif; ?>
   <!-- /News & Events page -->
 
   <!-- Contact page -->

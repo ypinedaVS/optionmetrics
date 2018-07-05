@@ -355,7 +355,7 @@
         </div>
       </div>
       <div class="row d-flex align-items-center mb-5 pt-5 mx-0">
-        <div class="col-lg-6 col-md-6 col-xl-6">
+        <div class="col-sm-12 col-lg-6 col-md-6 col-xl-6">
           <div class="tab-content" id="nav-tabContentGraph">
             <div class="tab-pane fade show active" role="tabpanel">
               <nav>
@@ -395,7 +395,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-xl-6 tab-content">
+        <div class="col-md-5 col-xl-6 tab-content d-xs-none d-sm-none">
           <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
           <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
           <img src="<?php gtdu('/assets/Continouos_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="continouos" role="tabpanel" aria-labelledby="continouos-tab">
@@ -404,10 +404,10 @@
         </div> 
       </div>
       <div class="row d-flex align-items-center mb-5 pt-5 mx-0">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wuo-img">
+        <div class="col-sm-12 col-xl-6 col-lg-6 col-md-6 col-sm-6 wuo-img">
           <img src="<?php gtdu('/assets/Data_illustration.png'); ?>" alt="">
         </div>
-        <div class="col-md-5 col-xl-6 tab-content">
+        <div class="col-sm-12 col-md-5 col-xl-6 tab-content">
           <p class="section-title montserrat-medium mt-4">Why Use OptionMetrics Historical Options Data</p>
           <p class="text-grey lato-light h5 mb-5">Using the tool for graphing realized nd implied volatility data.</p>
           <button class="btn btn-warning montserrat-medium btn-main-slider btn-get-started">Get Started</button>
@@ -419,16 +419,6 @@
   <!-- /Data Products page -->
 
   <!-- News & Events page -->
-  <?php if ( is_page( 'news-events') ) : ?>
-  <div class="container">
-    <div class="position-relative page-wrapper-up">
-      <div class="row">
-        
-      </div>
-    </div>
-  </div>
-
-  <?php endif; ?>
   <!-- /News & Events page -->
 
   <!-- Contact page -->

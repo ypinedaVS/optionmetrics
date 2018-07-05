@@ -362,7 +362,7 @@ footer {
         opacity: 1;
       }
       @media (min-width: 480px) {
-        width: 80px;
+        width: 100px;
         text-align: center;
       }
       // margin: 0px 5px;
@@ -407,10 +407,22 @@ footer {
 }
 .wuo-img {
   text-align: center;
+  img {
+    width: 100%;
+  }
 }
 .tab-content{
   .page-feature-text{
     letter-spacing: 1.5px;
   }
 }
-
+@media (max-width: 480px) {
+  .tab-content{
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .tab-content{
+    text-align: center;
+  }
+}

@@ -324,7 +324,7 @@ footer {
       opacity: 1; }
     @media (min-width: 480px) {
       .nav-tabs .nav-item.nav-item-country {
-        width: 80px;
+        width: 100px;
         text-align: center; } }
 
 .nav-tabs .nav-link {
@@ -357,11 +357,19 @@ footer {
       height: 15%; }
     .content-nav-graph .nav-graph-link p {
       margin: auto 0; }
-.wuo-img{ 
-  text-align: center;}
-  img {
-    width: 100%;
-  }
+
+.wuo-img {
+  text-align: center; }
+  .wuo-img img {
+    width: 100%; }
 
 .tab-content .page-feature-text {
   letter-spacing: 1.5px; }
+
+@media (max-width: 480px) {
+  .tab-content {
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .tab-content {
+    text-align: center; } }

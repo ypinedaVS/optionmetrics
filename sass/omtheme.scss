@@ -405,31 +405,38 @@ footer {
     }
   }
 }
-
 .card{
   border: none!important;
-    @media (max-width: 480px) {
-    .nav-item .nav-graph-link {
+  .heading{
+    border: none!important;
+    a{
       color: #000;
-      display: flex!important;
-      border-radius: 5px;
       text-decoration: none;
       width: 100%;
+      display: flex;
+      text-decoration: none;
+      border: none;
       &:hover{
+        background-color: $grey-light;
+        box-shadow: 2px 2px 5px #888888;
+      }
+      &.active {
         background-color: $grey-light;
         box-shadow: 2px 2px 5px #888888
       }
       img{
-        width: 15%;
-        height: 15%;
+        width: 7%;
+        height: 7%;
       }
       p{
         margin: auto 0;
       }
     }
   }
+  .text-body{
+    border-left: 3px solid $yellow;
+  }
 }
-
 .wuo-img {
   text-align: center;
   img {

@@ -360,21 +360,28 @@ footer {
 
 .card {
   border: none !important; }
-  @media (max-width: 480px) {
-    .card .nav-item .nav-graph-link {
+  .card .heading {
+    border: none !important; }
+    .card .heading a {
       color: #000;
-      display: flex !important;
-      border-radius: 5px;
       text-decoration: none;
-      width: 100%; }
-      .card .nav-item .nav-graph-link:hover {
+      width: 100%;
+      display: flex;
+      text-decoration: none;
+      border: none; }
+      .card .heading a:hover {
         background-color: #F3F3F3;
         box-shadow: 2px 2px 5px #888888; }
-      .card .nav-item .nav-graph-link img {
-        width: 15%;
-        height: 15%; }
-      .card .nav-item .nav-graph-link p {
-        margin: auto 0; } }
+      .card .heading a.active {
+        background-color: #F3F3F3;
+        box-shadow: 2px 2px 5px #888888; }
+      .card .heading a img {
+        width: 7%;
+        height: 7%; }
+      .card .heading a p {
+        margin: auto 0; }
+  .card .text-body {
+    border-left: 3px solid #F1CB3B; }
 
 .wuo-img {
   text-align: center; }

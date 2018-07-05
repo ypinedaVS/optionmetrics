@@ -72,6 +72,17 @@
     .main-slider-title {
       font-size: 80px; } }
 
+.post-date {
+  background-color: #F1CB3B;
+  right: 15px;
+  color: #202020;
+  width: 50px;
+  height: 50px;
+  line-height: 17px; }
+  .post-date.big {
+    width: 70px;
+    height: 70px; }
+
 .btn {
   font-weight: 300;
   font-size: 18px; }

@@ -148,48 +148,11 @@
             <p class="section-title montserrat-regular text-center mb-4">News & Events</p>
           </div>
           <div class="col-md-6">
-          <?php
-            $args = array(
-              'category_name'   => 'news-events',
-              'orderby'         => 'rand',
-              'posts_per_page'  => 1,
-              'tax_query'       => array( array(
-                'taxonomy'  => 'post_tag',
-                'field'     => 'slug',
-                'terms'     => 'featured'
-              ))
-            );
-            $featured = new WP_Query( $args );
-            if( $featured->have_posts() ) :
-              while( $featured->have_posts() ) :
-                $featured->the_post();
-                $the_id = get_the_ID();
-          ?>
-            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Featured News" class="img-fluid w-100 mb-3">
-            <p class="text-blue-dark montserrat-medium h4 text-center text-sm-left"><?php the_title(); ?></p>
-            <p class="text-grey lato-light text-center text-sm-left mb-5"><?php echo get_the_content(); ?></p>
-          <?php endwhile; endif; ?>
+            <?php get_template_part( 'news', 'featured' ); ?>
           </div>
           <div class="col-md-6">
             <div class="row">
-            <?php
-              $args = array(
-                'category_name'   => 'news-events',
-                'orderby'         => 'date',
-                'order'           => 'DESC',
-                'posts_per_page'  => 4,
-              );
-              $news = new WP_Query( $args );
-              if( $news->have_posts() ) :
-                while( $news->have_posts() ) : $news->the_post();
-                if( $the_id != get_the_ID() ) :
-            ?>
-              <div class="col-6 col-md-6">
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="News & Events" class="img-fluid w-100 mb-2">
-                <p class="text-blue-dark montserrat-medium news-mini"><?php the_title(); ?></p>
-                <p class="text-grey-dark lato-light news-mini"><?php echo get_the_content(); ?></p>
-              </div>
-            <?php endif; endwhile; endif; ?>
+              <?php get_template_part( 'news', 'last-four' ); ?>
             </div>
           </div>
         </div>

@@ -327,3 +327,30 @@ footer {
   color: #ffffff;
   font-size: 18px;
   font-family: 'Lato Light'; }
+
+.content-nav-graph {
+  margin-bottom: 10px;
+  width: 100%; }
+  .content-nav-graph .nav-graph-link {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100%; }
+    .content-nav-graph .nav-graph-link:hover {
+      background-color: #F3F3F3;
+      box-shadow: 2px 2px 5px #888888; }
+    .content-nav-graph .nav-graph-link img {
+      width: 15%;
+      height: 15%; }
+    .content-nav-graph .nav-graph-link p {
+      margin: auto 0; }
+.wuo-img{ 
+  text-align: center;}
+  img {
+    width: 100%;
+  }
+
+.tab-content .page-feature-text {
+  letter-spacing: 1.5px; }

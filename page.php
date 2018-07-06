@@ -399,7 +399,7 @@
           <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
           <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
           <img src="<?php gtdu('/assets/Continouos_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="continouos" role="tabpanel" aria-labelledby="continouos-tab">
-          <img src="<?php gtdu('/assets/Daily_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="daily" role="tabpanel" aria-labelledby="daily-tab">              
+          <img src="<?php gtdu('/assets/Daily_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="daily" role="tabpanel" aria-labelledby="daily-tab">
           <img src="<?php gtdu('/assets/Customer_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="customer" role="tabpanel" aria-labelledby="customer-tab">
         </div>
         <div class="col-sm-12 accordion d-md-none d-xl-none d-lg-none d-block d-sm-block" id="accordionExample">
@@ -414,6 +414,17 @@
               <div class="card-body text-body">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
+            </div>
+            <div class="col-md-5 col-xl-6 pt-5 tab-content">
+              <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
+
+              <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
+
+              <img src="<?php gtdu('/assets/Continouos_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="continouos" role="tabpanel" aria-labelledby="continouos-tab">
+
+              <img src="<?php gtdu('/assets/Daily_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="daily" role="tabpanel" aria-labelledby="daily-tab">
+
+              <img src="<?php gtdu('/assets/Customer_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="customer" role="tabpanel" aria-labelledby="customer-tab">
             </div>
           </div>
           <div class="card">
@@ -478,7 +489,7 @@
           <p class="section-title montserrat-medium mt-4">Why Use OptionMetrics Historical Options Data</p>
           <p class="text-grey lato-light h5 mb-5">Using the tool for graphing realized nd implied volatility data.</p>
           <button class="btn btn-warning montserrat-medium btn-main-slider btn-get-started">Get Started</button>
-        </div> 
+        </div>
       </div>
     </div>
 
@@ -486,6 +497,22 @@
   <!-- /Data Products page -->
 
   <!-- News & Events page -->
+  <?php if ( is_page( 'news-events') ) : ?>
+  <div class="container">
+    <div class="position-relative page-wrapper-up pt-5 ">
+      <div class="row">
+        <div class="col-12">
+          <p class="section-title montserrat-regular text-center mb-4">Events</p>
+        </div>
+        <div class="col-12 px-5">
+          <?php get_template_part( 'news', 'featured-page' ); ?>
+        </div>
+        <?php get_template_part( 'news', 'events-pagination' ); ?>
+      </div>
+    </div>
+  </div>
+
+  <?php endif; ?>
   <!-- /News & Events page -->
 
   <!-- Contact page -->

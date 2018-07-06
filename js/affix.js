@@ -30,11 +30,11 @@ jQuery(document).ready(function($) {
     const widthClient = $(this).innerWidth()
 
     if (widthClient >= 992) {
-      $('ul.navbar-nav > li:first').hide()
-      $('ul.navbar-nav > li:last').show()
+      // $('ul.navbar-nav > li:first').hide()
+      // $('ul.navbar-nav > li:last').show()
     } else {
-      $('ul.navbar-nav > li:first').show()
-      $('ul.navbar-nav > li:last').hide()
+      // $('ul.navbar-nav > li:first').show()
+      // $('ul.navbar-nav > li:last').hide()
     }
     if (widthClient >= 768) {
       $('#nav-tab').removeClass('justify-content-center')

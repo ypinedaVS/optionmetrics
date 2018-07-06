@@ -459,7 +459,6 @@
                 <img src="<?php gtdu('/assets/Continuos_icon.png'); ?>" alt="icon">
                 <p>Continouos Illustration</p>
               </a>
-              </h5>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
               <div class="card-body text-body">
@@ -473,6 +472,7 @@
                 <img src="<?php gtdu('/assets/Customer_icon.png'); ?>" alt="icon">
                 <p>Customer Illustration</p>
               </a>
+            </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
               <div class="card-body">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
@@ -492,6 +492,7 @@
         </div>
       </div>
     </div>
+  </div>
 
   <?php endif; ?>
   <!-- /Data Products page -->

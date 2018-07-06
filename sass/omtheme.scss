@@ -408,7 +408,10 @@ footer {
 .card{
   border: none!important;
   .heading{
-    border: none!important;
+    border-top: none!important;
+    border-bottom: none!important;
+    border-right: none!important;
+    border-left: 3px solid $yellow;
     a{
       color: #000;
       text-decoration: none;

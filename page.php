@@ -355,7 +355,7 @@
         </div>
       </div>
       <div class="row d-flex align-items-center mb-5 pt-5 mx-0">
-        <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6">
+        <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 d-sm-none d-none d-lg-block d-xl-block d-md-block">
           <div class="tab-content" id="nav-tabContentGraph">
             <div class="tab-pane fade show active" role="tabpanel">
               <nav>
@@ -395,14 +395,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-xl-6 tab-content">
+        <div class="col-md-5 col-xl-6 tab-content d-sm-none d-none d-lg-block d-xl-block d-md-block">
           <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
           <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
           <img src="<?php gtdu('/assets/Continouos_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="continouos" role="tabpanel" aria-labelledby="continouos-tab">
           <img src="<?php gtdu('/assets/Daily_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="daily" role="tabpanel" aria-labelledby="daily-tab">              
           <img src="<?php gtdu('/assets/Customer_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="customer" role="tabpanel" aria-labelledby="customer-tab">
         </div>
-        <div class="col-sm-12 accordion" id="accordionExample">
+        <div class="col-sm-12 accordion d-md-none d-xl-none d-lg-none d-block d-sm-block" id="accordionExample">
           <div class="card">
             <div class="heading" id="headingOne">
               <a class="nav-item active" id="comprehensive-tab" href="#comprehensive" role="tab"  data-toggle="collapse" data-target="#collapseOne"aria-expanded="true" aria-controls="collapseOne" >
@@ -463,7 +463,7 @@
                 <p>Customer Illustration</p>
               </a>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div class="card-body text-body">
+              <div class="card-body">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>

@@ -361,7 +361,10 @@ footer {
 .card {
   border: none !important; }
   .card .heading {
-    border: none !important; }
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    border-left: 3px solid #F1CB3B; }
     .card .heading a {
       color: #000;
       text-decoration: none;

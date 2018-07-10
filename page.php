@@ -524,8 +524,13 @@
 
       </div>
     </div>-->
-    <div>
-
+    <div class="container-form">
+      <p>
+           Please complete the form below detailing your request and a member of our support staff will respond  as soon as possible.
+      </p>
+      <?php echo do_shortcode( '[contact-form-7 id="157" title="contact-form-om"]' ); ?>
+    </div>
+    <div class="container-info">
       <img class="logo_toggle" src="http://localhost/optionmetrics/wp-content/themes/omtheme/assets/logo_toggle_menu.png" alt="optionmetrics logo" id="header-logo" width="160px">
       <br>
       <br>

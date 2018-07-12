@@ -13,7 +13,7 @@
     while( $news->have_posts() ) :
       $news->the_post();
 ?>
-<div class="col-6 col-md-6 hide-show-more">
+  <div class="col-6 col-md-6 hide-show-more">
   <?php get_template_part( 'partials/news', 'date' ); ?>
   <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="News & Events News-Event-ID-<?php echo get_the_ID(); ?>" class="img-fluid w-100 mb-3">
   <p class="text-blue montserrat-medium h6 mb-1"><?php the_title(); ?></p>

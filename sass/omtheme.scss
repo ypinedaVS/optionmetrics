@@ -461,3 +461,24 @@ footer {
     text-align: center;
   }
 }
+
+.privacy-policy-info {
+  .buttonBack{
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    background: white;
+  }
+  h5{
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+  }
+  .p-welcome{
+    text-align: center;
+    width: 70%;
+    margin: 20px;
+    margin-left: 15%;
+  }
+}

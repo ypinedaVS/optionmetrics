@@ -399,3 +399,21 @@ footer {
 @media (max-width: 768px) {
   .tab-content {
     text-align: center; } }
+
+.privacy-policy-info .buttonBack {
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  background: white; }
+
+.privacy-policy-info h5 {
+  font-weight: bold; }
+
+.privacy-policy-info p {
+  font-size: 15px; }
+
+.privacy-policy-info .p-welcome {
+  text-align: center;
+  width: 70%;
+  margin: 20px;
+  margin-left: 15%; }

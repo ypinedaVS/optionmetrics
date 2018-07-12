@@ -105,6 +105,53 @@
 .map {
   width: 100%; }
 
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  font-family: 'Montserrat Medium' !important;
+  color: #0D3049 !important;
+  opacity: 0.5; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.next, .dataTables_wrapper .dataTables_paginate .paginate_button.previous, .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    opacity: 1;
+    font-weight: bold; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button:active, .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border: 1px solid transparent !important;
+    background: transparent !important; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: #0D3049 !important; }
+
+.dataTables_wrapper .dataTables_filter {
+  width: 100%; }
+  @media (min-width: 992px) {
+    .dataTables_wrapper .dataTables_filter {
+      width: 60%; } }
+  .dataTables_wrapper .dataTables_filter label {
+    width: 100%; }
+    .dataTables_wrapper .dataTables_filter label input {
+      margin-left: 0px !important;
+      width: 100%;
+      border: none;
+      padding: 10px 20px;
+      background-color: whitesmoke !important; }
+
+#news_wrapper {
+  background-color: whitesmoke !important;
+  padding: 30px !important; }
+  #news_wrapper .dataTables_filter {
+    width: 100% !important; }
+    #news_wrapper .dataTables_filter label {
+      width: 100% !important; }
+      #news_wrapper .dataTables_filter label input {
+        width: 100% !important;
+        background-color: #ffffff !important; }
+
+table#news.dataTable tbody tr td {
+  border-bottom: 1px solid #9c9c9c; }
+
+table.dataTable.no-footer {
+  border: none !important; }
+
+table.dataTable tbody tr {
+  background-color: transparent !important; }
+
 .post-date {
   background-color: #F1CB3B;
   right: 15px;
@@ -278,6 +325,9 @@
 
 .o-50 {
   opacity: 0.5; }
+
+.navigation-pull-left {
+  float: left !important; }
 
 .text-blue-dark {
   color: #0D3049 !important; }

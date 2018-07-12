@@ -206,13 +206,11 @@
   <div class="container">
     <div class="position-relative page-wrapper-up pt-5 ">
       <div class="row">
-        <div class="col-12">
-          <p class="section-title montserrat-regular text-center mb-4">Events</p>
-        </div>
         <div class="col-12 px-5">
-          <?php get_template_part( 'news', 'featured-page' ); ?>
+          <?php get_template_part( 'partials/news', 'featured-page' ); ?>
         </div>
-        <?php get_template_part( 'news', 'events-pagination' ); ?>
+        <?php get_template_part( 'partials/news', 'events-pagination' ); ?>
+        <?php get_template_part( 'partials/news', 'news-pagination' ); ?>
       </div>
     </div>
   </div>

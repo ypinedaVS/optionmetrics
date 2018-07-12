@@ -19,32 +19,34 @@ jQuery(document).ready(function($) {
     const scrollValue = $(window).scrollTop()
 
     $('html, body').animate({ scrollTop: scrollValue <= 50 ? 51 : scrollValue === 51 ? 0 : scrollValue })
-    if ($(this).hasClass('collapsed')) {
-      $('#search-icon').show()
-    } else {
-      $('#search-icon').hide()
-    }
   })
 
   $(window).on('load resize', function(e) {
     const widthClient = $(this).innerWidth()
+    const first = $('ul.navbar-nav > li:first')
+    const last = $('ul.navbar-nav > li:last')
+    const searchIcon = '<span id="search-icon" class="fa fa-search"></span>'
+    const search = first.children().text().toLowerCase()
 
     if (widthClient >= 992) {
-      // $('ul.navbar-nav > li:first').hide()
-      // $('ul.navbar-nav > li:last').show()
+      if (search === 'search' || search === searchIcon) {
+        first.parent().append(first)
+        if (search === 'search') {
+          first.children().html(searchIcon)
+        }
+      }
     } else {
-      // $('ul.navbar-nav > li:first').show()
-      // $('ul.navbar-nav > li:last').hide()
+      if (search !== 'search') {
+        if (search !== searchIcon) {
+          last.parent().prepend(last)
+          last.children().html('search')
+        }
+      }
     }
     if (widthClient >= 768) {
       $('#nav-tab').removeClass('justify-content-center')
     } else {
       $('#nav-tab').addClass('justify-content-center')
     }
-
-  })
-
-  $(window).on('load', function(e) {
-    $('ul.navbar-nav > li:first').append('<span id="search-icon" class="fa fa-search text-blue position-absolute" style="top:97px;right:20px"></span>')
   })
 })

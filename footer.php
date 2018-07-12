@@ -1,8 +1,8 @@
-    <footer class="px-3 py-5">
-      <div class="container" style="max-width:1600px">
+    <footer class="footer px-3 py-5">
+      <div class="container">
         <div class="row justify-content-md-around justify-content-xl-center">
           <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start align-items-center mb-4">
-            <a href="/" class="nav d-xl-none">
+            <a href="<?php echo get_home_url(); ?>" class="nav d-xl-none">
               <img src="<?php gtdu('/assets/logo.png'); ?>" alt="Logo" />
             </a>
           </div>
@@ -19,7 +19,7 @@
             </ul>
           </div>
           <div class="col-md-auto d-none d-xl-block">
-            <a href="/">
+            <a href="<?php echo get_home_url(); ?>">
               <img src="<?php gtdu('/assets/logo.png'); ?>" alt="Logo">
             </a>
           </div>
@@ -111,6 +111,7 @@
         </div>
       </div>
     </footer>
+    <?php get_template_part( 'partials/social', 'footer' ); ?>
     <?php wp_footer(); ?>
   </body>
 </html>

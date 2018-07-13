@@ -461,7 +461,6 @@ footer {
     text-align: center;
   }
 }
-
 .privacy-policy-info {
   .buttonBack{
     cursor: pointer;
@@ -477,8 +476,54 @@ footer {
   }
   .p-welcome{
     text-align: center;
-    width: 70%;
-    margin: 20px;
-    margin-left: 15%;
+    width: 90%;
+    margin: auto;
+    color: #7d7d7d;
+  }
+  .buttonBack{
+    color: #7d7d7d;
+  }
+}
+.form-cont{
+  padding: 40px;
+  label{
+    width: 100%;
+    font-family: 'Lato Light';
+    font-size: 16px;
+    color: #000000;
+    span{
+      width: 100%;
+      height: 45px;
+      input, select{
+        width: 100%;
+        height: 45px;
+        margin-top: 15px;
+        padding: 0px 10px;
+      }
+      .input-form{
+        border: 1.5px solid #bbb;
+      }
+      textarea{
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+        border: 1.5px solid #bbb;
+      }
+    }
+  }
+  address{
+    font-family: 'Lato Light';
+    font-size: 16px;
+    color: #000000;
+  }  
+}
+@media (max-width: 480px) {
+  .form-cont .logo-mob, address{
+    text-align: center;    
+  }
+}
+@media (max-width: 768px) {
+  .form-cont .logo-mob, address{
+    text-align: center;    
   }
 }

@@ -494,7 +494,6 @@
       </div>
     </div>
   </div>
-
   <?php endif; ?>
   <!-- /Data Products page -->
 
@@ -513,49 +512,52 @@
       </div>
     </div>
   </div>
-
   <?php endif; ?>
   <!-- /News & Events page -->
 
   <!-- Contact page-->
   <?php if ( is_page( 'contact') ) : ?>
   <div class="container">
-    <!--<div class="position-relative page-wrapper-up pt-5 ">
+    <div class="position-relative page-wrapper-up pt-5 ">
       <div class="row">
+        <div class="container-form col-lg-6 col-md-6 col-sm-12">
+          <div class="form-cont">
+            <p class="page-feature-text">
+              Please complete the form below detailing your request and a member of our support staff will respond  as soon as possible.
+            </p>
+            <?php echo do_shortcode( '[contact-form-7 id="157" title="contact-form-om"]' ); ?>
+          </div>
+        </div>
+        <div class="container-info col-lg-6 col-md-6 col-sm-12">
+          <div class="form-cont">
+            <div class="logo-mob">
+              <img class="logo_toggle" src="http://localhost/optionmetrics/wp-content/themes/omtheme/assets/logo_toggle_menu.png" alt="optionmetrics logo" id="header-logo" width="160px">
+            </div>
+            <br>
+            <br>
+            <address>
+              OptionMetrics LLC<br>
+              1776 Broadway, Suite 1800<br>
+              New Yord, NY 10019<br>
+            </address>
 
+            <address>
+              <strong>Phone: </strong>(212) 707-8370<br>
+              <strong>Fax: </strong>(212) 707-8495<br>
+            </address>
+
+            <address>
+              <strong>DayTime support -</strong> 8:00 AM to 6:00 PM ET (New York)<br>
+              (212) 707-8370<br>
+            </address>
+
+             <address>
+              <strong>After-hours support -</strong> ungent issues only<br>
+              (800) 269-9192<br>
+            </address>        
+          </div>
+        </div>
       </div>
-    </div>-->
-    <div class="container-form">
-      <p>
-           Please complete the form below detailing your request and a member of our support staff will respond  as soon as possible.
-      </p>
-      <?php echo do_shortcode( '[contact-form-7 id="157" title="contact-form-om"]' ); ?>
-    </div>
-    <div class="container-info">
-      <img class="logo_toggle" src="http://localhost/optionmetrics/wp-content/themes/omtheme/assets/logo_toggle_menu.png" alt="optionmetrics logo" id="header-logo" width="160px">
-      <br>
-      <br>
-      <address>
-        OptionMetrics LLC<br>
-        1776 Broadway, Suite 1800<br>
-        New Yord, NY 10019<br>
-      </address>
-
-      <address>
-        <strong>Phone: </strong>(212) 707-8370<br>
-        <strong>Fax: </strong>(212) 707-8495<br>
-      </address>
-
-      <address>
-        <strong>DayTime support -</strong> 8:00 AM to 6:00 PM ET (New York)<br>
-        (212) 707-8370<br>
-      </address>
-
-       <address>
-        <strong>After-hours support -</strong> ungent issues only<br>
-        (800) 269-9192<br>
-      </address>
-      
     </div>
   </div>
   <?php endif; ?>

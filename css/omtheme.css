@@ -414,6 +414,44 @@ footer {
 
 .privacy-policy-info .p-welcome {
   text-align: center;
-  width: 70%;
-  margin: 20px;
-  margin-left: 15%; }
+  width: 90%;
+  margin: auto;
+  color: #7d7d7d; }
+
+.privacy-policy-info .buttonBack {
+  color: #7d7d7d; }
+
+.form-cont {
+  padding: 40px; }
+  .form-cont label {
+    width: 100%;
+    font-family: 'Lato Light';
+    font-size: 16px;
+    color: #000000; }
+    .form-cont label span {
+      width: 100%;
+      height: 45px; }
+      .form-cont label span input, .form-cont label span select {
+        width: 100%;
+        height: 45px;
+        margin-top: 15px;
+        padding: 0px 10px; }
+      .form-cont label span .input-form {
+        border: 1.5px solid #bbb; }
+      .form-cont label span textarea {
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+        border: 1.5px solid #bbb; }
+  .form-cont address {
+    font-family: 'Lato Light';
+    font-size: 16px;
+    color: #000000; }
+
+@media (max-width: 480px) {
+  .form-cont .logo-mob, address {
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .form-cont .logo-mob, address {
+    text-align: center; } }

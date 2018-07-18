@@ -1,5 +1,5 @@
-@import "_variables";
-@import "_fonts";
+@import '_variables';
+@import '_fonts';
 
 .text-grey {
   color: $grey !important;
@@ -32,6 +32,19 @@
   @media (min-width: 768px) {
     font-size: 15px;
   }
+}
+
+.qualification-text {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.privacy-policy {
+  color: #686565;
+}
+
+.center-icon {
+  padding-left: 134px;
 }
 
 .nav-tabs {
@@ -359,7 +372,7 @@ table {
 }
 
 .partner-img {
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
   filter: grayscale(100%);
   &:hover,
   &.active {
@@ -388,39 +401,9 @@ table {
   float: left !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // =====================================================================
 // =====================================================================
 // =====================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .text-blue-dark {
   color: $blue-dark !important;
@@ -438,29 +421,9 @@ table {
   color: $blue-light-2 !important;
 }
 
-
-
-
-
-
 .news-mini {
   font-size: 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .news-wrapper {
   padding: 35px !important;
@@ -485,9 +448,6 @@ table {
     }
   }
 }
-
-
-
 
 .page-section-title,
 .partner-name,
@@ -535,8 +495,6 @@ table {
   margin-left: 83.5%;
 }
 
-
-
 .page-feature-title {
   font-size: 16px;
   color: $blue-dark;
@@ -546,7 +504,6 @@ table {
   font-size: 16px;
   color: $text;
 }
-
 
 .rights {
   color: $white;
@@ -563,51 +520,51 @@ table {
     border-radius: 5px;
     text-decoration: none;
     width: 100%;
-    &:hover{
+    &:hover {
       background-color: $grey-light;
-      box-shadow: 2px 2px 5px #888888
+      box-shadow: 2px 2px 5px #888888;
     }
-    img{
+    img {
       width: 15%;
       height: 15%;
     }
-    p{
+    p {
       margin: auto 0;
     }
   }
 }
-.card{
-  border: none!important;
-  .heading{
-    border-top: none!important;
-    border-bottom: none!important;
-    border-right: none!important;
+.card {
+  border: none !important;
+  .heading {
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
     border-left: 3px solid $yellow;
-    a{
+    a {
       color: #000;
       text-decoration: none;
       width: 100%;
       display: flex;
       text-decoration: none;
       border: none;
-      &:hover{
+      &:hover {
         background-color: $grey-light;
         box-shadow: 2px 2px 5px #888888;
       }
       &.active {
         background-color: $grey-light;
-        box-shadow: 2px 2px 5px #888888
+        box-shadow: 2px 2px 5px #888888;
       }
-      img{
+      img {
         width: 7%;
         height: 7%;
       }
-      p{
+      p {
         margin: auto 0;
       }
     }
   }
-  .text-body{
+  .text-body {
     border-left: 3px solid $yellow;
   }
 }
@@ -617,64 +574,65 @@ table {
     width: 100%;
   }
 }
-.tab-content{
-  .page-feature-text{
+.tab-content {
+  .page-feature-text {
     letter-spacing: 1.5px;
   }
 }
 @media (max-width: 480px) {
-  .tab-content{
+  .tab-content {
     text-align: center;
   }
 }
 @media (max-width: 768px) {
-  .tab-content{
+  .tab-content {
     text-align: center;
   }
 }
 .privacy-policy-info {
-  .buttonBack{
+  .buttonBack {
     cursor: pointer;
     font-size: 15px;
     border: none;
     background: white;
   }
-  h5{
+  h5 {
     font-weight: bold;
   }
-  p{
+  p {
     font-size: 15px;
   }
-  .p-welcome{
+  .p-welcome {
     text-align: center;
     width: 90%;
     margin: auto;
     color: #7d7d7d;
   }
-  .buttonBack{
+  .buttonBack {
     color: #7d7d7d;
   }
 }
-.form-cont{
+.form-cont {
   padding: 40px;
-  label{
+  label {
     width: 100%;
     font-family: 'Lato Light';
     font-size: 16px;
     color: #000000;
-    span{
+    span {
       width: 100%;
       height: 45px;
-      input, select{
+      input,
+      select {
         width: 100%;
         height: 45px;
         margin-top: 15px;
         padding: 0px 10px;
       }
-      .input-form{
+      .input-form {
         border: 1.5px solid #bbb;
       }
-      textarea{
+      textarea {
         width: 100%;
         margin-top: 15px;
         padding: 10px;
@@ -682,19 +640,21 @@ table {
       }
     }
   }
-  address{
+  address {
     font-family: 'Lato Light';
     font-size: 16px;
     color: #000000;
-  }  
+  }
 }
 @media (max-width: 480px) {
-  .form-cont .logo-mob, address{
-    text-align: center;    
+  .form-cont .logo-mob,
+  address {
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
-  .form-cont .logo-mob, address{
-    text-align: center;    
+  .form-cont .logo-mob,
+  address {
+    text-align: center;
   }
 }

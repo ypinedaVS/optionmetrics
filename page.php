@@ -268,10 +268,12 @@
  <!-- Get Started Qualification page-->
   <?php if( is_page( 'qualification-process') ) : ?>
  <div class="container">
-   <div class="position-relative page-wrapper-up pt-5 ">
-      <div class="row">
-        <div class="col-12 px-5">
-         <?php echo do_shortcode( '[contact-form-7 id="188" title="qualification-process-form"]' ); ?>
+    <div class="row">
+      <div class="position-relative page-wrapper-up pt-5 form-cont">
+        <div class="form-cont">
+          <div class="col-12 px-5">
+          <?php echo do_shortcode( '[contact-form-7 id="188" title="qualification-process-form"]' ); ?>
+          </div>
         </div>
       </div>
     </div>

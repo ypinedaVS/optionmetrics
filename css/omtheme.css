@@ -69,6 +69,16 @@
     .section-text {
       font-size: 15px; } }
 
+.qualification-text {
+  text-align: center;
+  margin-top: 25px; }
+
+.privacy-policy {
+  color: #686565; }
+
+.center-icon {
+  padding-left: 134px; }
+
 .nav-tabs .nav-item {
   margin-bottom: 0px !important;
   font-family: 'Montserrat Regular';
@@ -308,7 +318,7 @@ table.dataTable tbody tr {
     text-transform: uppercase; }
 
 .partner-img {
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
   filter: grayscale(100%); }
   .partner-img:hover, .partner-img.active {
     filter: grayscale(0%); }
@@ -497,7 +507,8 @@ table.dataTable tbody tr {
     .form-cont label span {
       width: 100%;
       height: 45px; }
-      .form-cont label span input, .form-cont label span select {
+      .form-cont label span input,
+      .form-cont label span select {
         width: 100%;
         height: 45px;
         margin-top: 15px;
@@ -515,9 +526,11 @@ table.dataTable tbody tr {
     color: #000000; }
 
 @media (max-width: 480px) {
-  .form-cont .logo-mob, address {
+  .form-cont .logo-mob,
+  address {
     text-align: center; } }
 
 @media (max-width: 768px) {
-  .form-cont .logo-mob, address {
+  .form-cont .logo-mob,
+  address {
     text-align: center; } }

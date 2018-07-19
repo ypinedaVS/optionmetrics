@@ -6,6 +6,8 @@
   if( is_page( 'data-products' )) $tag = 'data-products';
   if( is_page( 'news-events' )) $tag = 'news-events';
   if( is_page( 'contact' )) $tag = 'contact';
+  if( is_page( 'privacy-policy' )) $tag = 'privacy-policy';
+  if( is_page( 'qualification-process' )) $tag = 'qualification-process';
 
   $args = array(
     'category_name' => 'home-slider',

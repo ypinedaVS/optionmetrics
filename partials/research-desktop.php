@@ -4,7 +4,7 @@
   $args = array(
     'category_name'     => 'research',
     'orderby'           => 'date',
-    'order'             => 'DESC'
+    'order'             => 'DESC',
     'tag__not_in'       => $featured->term_id
   );
   $research_desktop = new WP_Query( $args );
@@ -38,10 +38,9 @@
   $sc_args = '[wp-datatable id="research-desktop"]
     search: true,
     responsive: true,
-    pageLength: 2,
+    pageLength: 5,
     lengthChange: false,
     bInfo: false,
-    pagingType: "simple",
     language: {
       search: "",
       searchPlaceholder: "Search...",
@@ -57,6 +56,5 @@
   jQuery(document).ready(function($) {
     $("#research-desktop").children().first().remove();
     $(".dataTables_paginate").addClass("navigation-pull-left");
-    $("#research-desktop_wrapper").addClass("d-flex flex-column");
   });
 </script>

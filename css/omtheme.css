@@ -424,7 +424,7 @@ table.dataTable tbody tr {
     text-decoration: none;
     width: 100%; }
     .content-nav-graph .nav-graph-link:hover {
-      background-color: #606060;
+      background-color: #ececec;
       box-shadow: 2px 2px 5px #888888; }
     .content-nav-graph .nav-graph-link img {
       width: 15%;
@@ -447,10 +447,10 @@ table.dataTable tbody tr {
       text-decoration: none;
       border: none; }
       .card .heading a:hover {
-        background-color: #606060;
+        background-color: #ececec;
         box-shadow: 2px 2px 5px #888888; }
       .card .heading a.active {
-        background-color: #606060;
+        background-color: #ececec;
         box-shadow: 2px 2px 5px #888888; }
       .card .heading a img {
         width: 7%;

@@ -521,8 +521,8 @@ table {
     text-decoration: none;
     width: 100%;
     &:hover {
-      background-color: $grey-light;
-      box-shadow: 2px 2px 5px #888888;
+      background-color: $grey-light-hove;
+      box-shadow: 2px 2px 5px $grey-dark-shadow;
     }
     img {
       width: 15%;
@@ -530,7 +530,7 @@ table {
     }
     p {
       margin: auto 0;
-    }
+    }  
   }
 }
 .card {
@@ -548,12 +548,12 @@ table {
       text-decoration: none;
       border: none;
       &:hover {
-        background-color: $grey-light;
-        box-shadow: 2px 2px 5px #888888;
+        background-color: $grey-light-hove;
+        box-shadow: 2px 2px 5px $grey-dark-shadow;
       }
       &.active {
-        background-color: $grey-light;
-        box-shadow: 2px 2px 5px #888888;
+        background-color: $grey-light-hove;
+        box-shadow: 2px 2px 5px $grey-dark-shadow;
       }
       img {
         width: 7%;

@@ -65,31 +65,31 @@
               <nav>
                 <div class="nav nav-tabs justify-content-between" id="nav-tab-graph" role="tablist" style="border:none!important;margin-bottom:30px;">
                   <div class="content-nav-graph">
-                    <a class="nav-item nav-graph-link active" id="comprehensive-tab" data-toggle="tab" href="#comprehensive" role="tab" aria-controls="comprehensive" aria-selected="true">
+                    <a class="nav-graph-link active" id="comprehensive-tab" data-toggle="tab" href="#comprehensive" role="tab" aria-controls="comprehensive" aria-selected="true">
                       <img src="<?php gtdu('/assets/Commprensive_icon.png'); ?>" alt="icon">
                       <p>Comprehensive Illustration</p>
                     </a>
                   </div>
                   <div class="content-nav-graph">
-                    <a class="nav-item nav-graph-link" id="accurate-tab" data-toggle="tab" href="#accurate" role="tab" aria-controls="accurate" aria-selected="false">
+                    <a class="nav-graph-link" id="accurate-tab" data-toggle="tab" href="#accurate" role="tab" aria-controls="accurate" aria-selected="false">
                       <img src="<?php gtdu('/assets/Accumulate_icon.png'); ?>" alt="icon">
                       <p>Accurate Illustration</p>
                     </a>
                   </div>
                   <div class="content-nav-graph">
-                    <a class="nav-item nav-graph-link" id="continouos-tab" data-toggle="tab" href="#continouos" role="tab" aria-controls="continouos" aria-selected="false">
+                    <a class="nav-graph-link" id="continouos-tab" data-toggle="tab" href="#continouos" role="tab" aria-controls="continouos" aria-selected="false">
                       <img src="<?php gtdu('/assets/Continuos_icon.png'); ?>" alt="icon">
                       <p>Continouos Illustration</p>
                     </a>
                   </div>
                   <div class="content-nav-graph">
-                    <a class="nav-item nav-graph-link" id="daily-tab" data-toggle="tab" href="#daily" role="tab" aria-controls="daily" aria-selected="false">
+                    <a class="nav-graph-link" id="daily-tab" data-toggle="tab" href="#daily" role="tab" aria-controls="daily" aria-selected="false">
                       <img src="<?php gtdu('/assets/Daily_icon.png'); ?>" alt="icon">
                       <p>Daily Illustration</p>
                     </a>
                   </div>
                   <div class="content-nav-graph">
-                    <a class="nav-item nav-graph-link" id="customer-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="false">
+                    <a class="nav-graph-link" id="customer-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="false">
                       <img src="<?php gtdu('/assets/Customer_icon.png'); ?>" alt="icon">
                       <p>Customer Illustration</p>
                     </a>

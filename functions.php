@@ -11,6 +11,12 @@ function omtheme_script_enqueue()
   wp_enqueue_script( 'country', get_template_directory_uri() . '/js/country.js', array('jquery'), '0.0.1', true );
   wp_enqueue_script( 'affix', get_template_directory_uri() . '/js/affix.js', array('jquery'), '0.0.1', true );
   wp_enqueue_script( 'partners', get_template_directory_uri() . '/js/partners.js', array('jquery'), '0.0.1', true );
+
+  if( is_page( 'research' ) ) {
+    wp_register_script( 'research_script', get_template_directory_uri() . '/js/research.js', array('jquery'), '0.0.1', true );
+    wp_enqueue_script( 'research_script' );
+    wp_localize_script( 'research_script', 'research_vars', [ 'ajaxurl' => admin_url('admin-ajax.php') ] );
+  }
 }
 add_action( 'wp_enqueue_scripts', 'omtheme_script_enqueue' );
 
@@ -55,4 +61,24 @@ function getImageURLFromPost( $num=1 )
 function gtdu($path)
 {
   echo get_template_directory_uri() . $path;
+}
+
+add_action( 'wp_ajax_nopriv_do_research_ajax', 'research_send_posts' );
+add_action( 'wp_ajax_do_research_ajax', 'research_send_posts' );
+
+function research_send_posts()
+{
+  $year = absint($_POST['year']);
+  $args = array(
+    'category_name'   => 'research',
+    'orderby'         => 'publish_date',
+    'order'           => 'DESC',
+    's'               => '',
+    'date_query'      => array( array(
+      'year'          => $year
+    ))
+  );
+  $the_query = new WP_Query ( $args );
+  echo json_encode($the_query->posts);
+  wp_die();
 }

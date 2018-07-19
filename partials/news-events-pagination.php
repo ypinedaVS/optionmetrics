@@ -73,5 +73,5 @@
   jQuery(document).ready(function($) {
     $("#events").children().first().remove();
     $(".dataTables_paginate").addClass("navigation-pull-left");
-  })
+  });
 </script>

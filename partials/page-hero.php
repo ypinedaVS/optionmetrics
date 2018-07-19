@@ -2,6 +2,7 @@
   get_header();
 
   if( is_page( 'about-us' )) $tag = 'about-us';
+  if( is_page( 'research' )) $tag = 'research';
   if( is_page( 'data-products' )) $tag = 'data-products';
   if( is_page( 'news-events' )) $tag = 'news-events';
   if( is_page( 'contact' )) $tag = 'contact';

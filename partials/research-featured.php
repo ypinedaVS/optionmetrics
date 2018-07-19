@@ -12,8 +12,8 @@
 ?>
   <p class="text-blue h5 montserrat-medium"><?php the_title(); ?></p>
   <p class="text-grey lato-regular" style="font-style:italic"><?php echo get_the_date( 'F jS, Y' ); ?></p>
-  <p class="_content text-center h5"><?php echo get_the_content(); ?></p>
-  <a class="btn btn-link text-blue-dark montserrat-medium m-auto">
+  <p class="_content text-center lato-regular h6"><?php echo get_the_content(); ?></p>
+  <a class="btn btn-link text-blue-dark montserrat-medium mx-auto mb-5">
     READ MORE
     <span class="fa fa-angle-double-right"></span>
   </a>

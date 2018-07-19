@@ -53,7 +53,6 @@
 <script type="text/javascript">
   jQuery(document).ready(function($) {
     $("#research-mobile").children().first().remove();
-    $(".dataTables_paginate").addClass("navigation-pull-left");
     $("#research-mobile_wrapper").addClass("d-flex flex-column");
   });
 </script>

@@ -232,7 +232,7 @@
         <div class="container-info col-lg-6 col-md-6 col-sm-12">
           <div class="form-cont">
             <div class="logo-mob">
-              <img class="logo_toggle" src="http://optionmetrics.local/wp-content/themes/omtheme/assets/logo_toggle_menu.png" alt="optionmetrics logo" id="header-logo" width="160px">
+              <img class="logo_toggle" src="<?php gtdu('/assets/logo_toggle_menu.png'); ?>" alt="optionmetrics logo" id="header-logo" width="160px">
             </div>
             <br>
             <br>
@@ -288,17 +288,20 @@
       <div class="row">
         <div class="col-12 p-4 text-center">
           <p class="section-title text-blue">Research</p>
-          <p class="text-blue o-50 lato-regular h6">OptionMetrics data is an essential component of many studies performed by both academics and practitioners. Below is a partial list of academic papers that used OptionMetrics data:</p>
+          <p class="text-blue o-50 lato-regular h6 mx-auto" style="max-width:880px;">OptionMetrics data is an essential component of many studies performed by both academics and practitioners. Below is a partial list of academic papers that used OptionMetrics data:</p>
         </div>
         <div class="col-12 px-4 pb-5 text-center hide-show-more d-md-none">
-          <?php get_template_part( 'partials/research', 'desktop' ); ?>
+          <?php get_template_part( 'partials/research', 'mobile' ); ?>
         </div>
         <div class="col-12 px-4 d-none d-md-block hide-show-more text-center">
           <?php get_template_part( 'partials/research', 'featured' ); ?>
         </div>
-        <div class="col-sm-7 d-none d-md-block">
+        <div class="col-sm-7 d-none d-md-block hide-show-more">
+          <?php get_template_part( 'partials/research', 'desktop' ); ?>
         </div>
         <div class="col-sm-5">
+          <?php get_template_part( 'partials/research', 'papers' ); ?>
+          <?php get_template_part( 'partials/research', 'years' ); ?>
         </div>
       </div>
     </div>

@@ -232,7 +232,7 @@
         <div class="container-info col-lg-6 col-md-6 col-sm-12">
           <div class="form-cont">
             <div class="logo-mob">
-              <img class="logo_toggle" src="http://localhost/optionmetrics/wp-content/themes/omtheme/assets/logo_toggle_menu.png" alt="optionmetrics logo" id="header-logo" width="160px">
+              <img class="logo_toggle" src="<?php gtdu('/assets/logo_toggle_menu.png'); ?>" alt="optionmetrics logo" id="header-logo" width="160px">
             </div>
             <br>
             <br>

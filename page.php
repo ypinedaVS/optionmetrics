@@ -65,31 +65,31 @@
               <nav>
                 <div class="nav nav-tabs justify-content-between" id="nav-tab-graph" role="tablist" style="border:none!important;margin-bottom:30px;">
                   <div class="content-nav-graph">
-                    <a class="nav-graph-link active" id="comprehensive-tab" data-toggle="tab" href="#comprehensive" role="tab" aria-controls="comprehensive" aria-selected="true">
+                    <a class="nav-graph-link1 active" id="comprehensive-tab" data-toggle="tab" href="#comprehensive" role="tab" aria-controls="comprehensive" aria-selected="true">
                       <img src="<?php gtdu('/assets/Commprensive_icon.png'); ?>" alt="icon">
                       <p>Comprehensive Illustration</p>
                     </a>
                   </div>
                   <div class="content-nav-graph">
-                    <a class="nav-graph-link" id="accurate-tab" data-toggle="tab" href="#accurate" role="tab" aria-controls="accurate" aria-selected="false">
+                    <a class="nav-graph-link2" id="accurate-tab" data-toggle="tab" href="#accurate" role="tab" aria-controls="accurate" aria-selected="false">
                       <img src="<?php gtdu('/assets/Accumulate_icon.png'); ?>" alt="icon">
                       <p>Accurate Illustration</p>
                     </a>
                   </div>
                   <div class="content-nav-graph">
-                    <a class="nav-graph-link" id="continouos-tab" data-toggle="tab" href="#continouos" role="tab" aria-controls="continouos" aria-selected="false">
+                    <a class="nav-graph-link3" id="continouos-tab" data-toggle="tab" href="#continouos" role="tab" aria-controls="continouos" aria-selected="false">
                       <img src="<?php gtdu('/assets/Continuos_icon.png'); ?>" alt="icon">
                       <p>Continouos Illustration</p>
                     </a>
                   </div>
                   <div class="content-nav-graph">
-                    <a class="nav-graph-link" id="daily-tab" data-toggle="tab" href="#daily" role="tab" aria-controls="daily" aria-selected="false">
+                    <a class="nav-graph-link4" id="daily-tab" data-toggle="tab" href="#daily" role="tab" aria-controls="daily" aria-selected="false">
                       <img src="<?php gtdu('/assets/Daily_icon.png'); ?>" alt="icon">
                       <p>Daily Illustration</p>
                     </a>
                   </div>
                   <div class="content-nav-graph">
-                    <a class="nav-graph-link" id="customer-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="false">
+                    <a class="nav-graph-link5" id="customer-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="false">
                       <img src="<?php gtdu('/assets/Customer_icon.png'); ?>" alt="icon">
                       <p>Customer Illustration</p>
                     </a>
@@ -109,13 +109,13 @@
         <div class="col-sm-12 accordion d-md-none d-xl-none d-lg-none d-block d-sm-block" id="accordionExample">
           <div class="card">
             <div class="heading" id="headingOne">
-              <a class="nav-item active" id="comprehensive-tab" href="#comprehensive" role="tab"  data-toggle="collapse" data-target="#collapseOne"aria-expanded="true" aria-controls="collapseOne" >
+              <a class="nav-item active" id="comprehensive-tab" href="#comprehensive" role="tab"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
                 <img src="<?php gtdu('/assets/Commprensive_icon.png'); ?>" alt="icon">
                 <p>Comprehensive Illustration</p>
               </a>
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body text-body">
+              <div class="card-body text-body1">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -139,7 +139,7 @@
               </a>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body text-body">
+              <div class="card-body text-body2">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -152,7 +152,7 @@
               </a>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body text-body">
+              <div class="card-body text-body3">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -165,7 +165,7 @@
               </a>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body text-body">
+              <div class="card-body text-body4">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -178,7 +178,7 @@
               </a>
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div class="card-body">
+              <div class="card-body text-body5">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -268,10 +268,10 @@
   <!-- Get qualification -->
   <?php if( is_page( 'qualification-process') ) : ?>
   <div class="container">
-    <div class="row">
-      <div class="position-relative page-wrapper-up pt-5 form-cont">
-        <div class="form-cont">
-          <div class="col-12 px-5">
+    <div class="position-relative page-wrapper-up pt-5">
+      <div class="row">
+        <div class="container-form col-lg-12 col-md-12 col-sm-12 col-xs-12 px-3">
+          <div class=" form-cont form-cont-gq">
           <?php echo do_shortcode( '[contact-form-7 id="188" title="qualification-process-form"]' ); ?>
           </div>
         </div>

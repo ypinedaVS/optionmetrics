@@ -162,6 +162,39 @@
 .map {
   width: 100%; }
 
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background-color: #cfcfcf; }
+
+.timeline .entry {
+  padding-bottom: 10px; }
+  .timeline .entry:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: 2px solid #cfcfcf;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 10px;
+    left: -5px;
+    position: relative;
+    background-color: #ffffff; }
+  .timeline .entry.active:before {
+    background-color: #0D3049;
+    border-color: #0D3049; }
+  .timeline .entry:last-child {
+    padding-bottom: 0px; }
+  .timeline .entry .timeline-year {
+    padding: 3px 12px;
+    border-radius: 4px; }
+    .timeline .entry .timeline-year.active {
+      background-color: #0D3049;
+      color: #ffffff !important; }
+
 .dataTables_wrapper .dataTables_paginate .paginate_button {
   font-family: 'Montserrat Medium' !important;
   color: #0D3049 !important;

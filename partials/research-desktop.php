@@ -1,10 +1,14 @@
 <?php
   $featured = get_term_by( 'name', 'featured', 'post_tag' );
+  $year = $_GET['query_year'] ? $_GET['query_year'] : date('Y');
 
   $args = array(
     'category_name'     => 'research',
-    'orderby'           => 'date',
+    'orderby'           => 'publish_date',
     'order'             => 'DESC',
+    'date_query'        => array( array(
+      'year'            => $year
+    )),
     'tag__not_in'       => $featured->term_id
   );
   $research_desktop = new WP_Query( $args );
@@ -36,6 +40,7 @@
 
 <?php
   $sc_args = '[wp-datatable id="research-desktop"]
+    bDestroy: true,
     search: true,
     responsive: true,
     pageLength: 5,
@@ -54,7 +59,7 @@
 ?>
 <script type="text/javascript">
   jQuery(document).ready(function($) {
-    $("#research-desktop").children().first().remove();
-    $(".dataTables_paginate").addClass("navigation-pull-left");
+    $("#research-desktop").children().first().remove()
+    $(".dataTables_paginate").addClass("navigation-pull-left")
   });
 </script>

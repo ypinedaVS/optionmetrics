@@ -256,7 +256,7 @@
 </div>
 <div class="container text-center text-md-left p-5 pl-lg-5">
   <div class="row">
-    <div class="col-md-5 offset-md-1 mb-5 pr-md-4">
+    <div class="col-md-4 offset-md-2 mb-5 pr-md-4">
       <img class="img-fluid w-100" src="<?php gtdu('/assets/Image_BusinessAnalyst.png'); ?>" alt="Business" />
       <p class="section-title montserrat-medium text-blue mt-2 mb-0 h4">Business Analyst</p>
       <button class="btn btn-link montserrat-medium text-blue pl-md-0 o-50">
@@ -264,7 +264,7 @@
         <span class="fa fa-angle-double-right"></span>
       </button>
     </div>
-    <div class="col-md-5 pl-md-4">
+    <div class="col-md-4 pl-md-4">
       <img class="img-fluid w-100" src="<?php gtdu('/assets/Image_SeniorSoftwareDeveloper.png'); ?>" alt="Developer" />
       <p class="section-title montserrat-medium text-blue mt-2 mb-0 h4">Senior Software Developer</p>
       <button class="btn btn-link montserrat-medium text-blue pl-md-0 o-50">

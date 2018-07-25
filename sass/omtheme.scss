@@ -28,65 +28,65 @@
 
 // ==============================
 
-.entries {
-  width:calc(100% - 80px);
-  max-width:800px;
-  margin:auto;
-  position: relative;
-  left:-5px;
-  .entry {
-    width:calc(50% - 80px);
-    float:left;
-    padding:20px;
-    clear:both;
-    text-align:right;
-    &:not(:first-child) {
-      margin-top:-60px;
-    }
-    .title {
-      font-size:32px;
-      margin-bottom:12px;
-      position: relative;
-      color:$blue;
-      &:before {
-        content: '';
-        position: absolute;
-        width:8px;
-        height:8px;
-        border:4px solid $blue;
-        background-color:#1D1D1D;
-        border-radius:100%;
-        top:50%;
-        transform:translateY(-50%);
-        right:-73px;
-        z-index:1000;
-      }
-      &.big:before {
-        width:24px;
-        height:24px;
-        transform:translate(8px,-50%);
-      }
-    }
-    .body {
-      color:#aaa;
-      p {
-        line-height:1.4em;
-      }
-    }
-    &:nth-child(n) {
-      text-align:left;
-      float:right;
-      .title {
-        &:before {
-          left:-63px;
-        }
-        &.big:before {
-          transform:translate(-8px,-50%);
-        }
-      }
-    }
-  }
-}
+// .entries {
+//   width:calc(100% - 80px);
+//   max-width:800px;
+//   margin:auto;
+//   position: relative;
+//   left:-5px;
+//   .entry {
+//     width:calc(50% - 80px);
+//     float:left;
+//     padding:20px;
+//     clear:both;
+//     text-align:right;
+//     &:not(:first-child) {
+//       margin-top:-60px;
+//     }
+//     .title {
+//       font-size:32px;
+//       margin-bottom:12px;
+//       position: relative;
+//       color:$blue;
+//       &:before {
+//         content: '';
+//         position: absolute;
+//         width:8px;
+//         height:8px;
+//         border:4px solid $blue;
+//         background-color:#1D1D1D;
+//         border-radius:100%;
+//         top:50%;
+//         transform:translateY(-50%);
+//         right:-73px;
+//         z-index:1000;
+//       }
+//       &.big:before {
+//         width:24px;
+//         height:24px;
+//         transform:translate(8px,-50%);
+//       }
+//     }
+//     .body {
+//       color:#aaa;
+//       p {
+//         line-height:1.4em;
+//       }
+//     }
+//     &:nth-child(n) {
+//       text-align:left;
+//       float:right;
+//       .title {
+//         &:before {
+//           left:-63px;
+//         }
+//         &.big:before {
+//           transform:translate(-8px,-50%);
+//         }
+//       }
+//     }
+//   }
+// }
 
 // =================================
 
@@ -154,6 +154,49 @@
 
 .map {
   width: 100%;
+}
+
+.timeline {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background-color: lighten($grey, 60%);
+  }
+  .entry {
+    padding-bottom: 10px;
+    &:before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border: 2px solid lighten($grey, 60%);
+      border-radius: 100%;
+      display: inline-block;
+      margin-right: 10px;
+      left: -5px;
+      position: relative;
+      background-color: $white;
+    }
+    &.active {
+      &:before {
+        background-color: $blue;
+        border-color: $blue;
+      }
+    }
+    &:last-child {
+      padding-bottom: 0px;
+    }
+    .timeline-year {
+      padding: 3px 12px;
+      border-radius: 4px;
+      &.active {
+        background-color: $blue;
+        color: $white !important;
+      }
+    }
+  }
 }
 
 .dataTables_wrapper {
@@ -594,7 +637,7 @@ table {
     }
     p {
       margin: auto 0;
-    }  
+    }
   }
 }
 .card {

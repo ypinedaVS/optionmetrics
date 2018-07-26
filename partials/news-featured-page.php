@@ -20,7 +20,7 @@
   </div>
   <div class="col-md-6 col-lg-7 text-center text-md-left">
     <p class="text-blue-dark montserrat-medium h4"><?php the_title(); ?></p>
-    <p class="text-grey lato-light"><?php echo get_the_content(); ?></p>
+    <p class="text-grey lato-regular"><?php echo get_the_content(); ?></p>
     <a href="<?php the_permalink(); ?>" class="btn btn-link montserrat-medium pl-0 text-blue-dark">READ MORE</a>
   </div>
 </div>

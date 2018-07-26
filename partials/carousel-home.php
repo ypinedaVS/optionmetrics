@@ -24,8 +24,8 @@
         <div class="d-flex h-100 align-items-center justify-content-center">
           <div class="carousel-caption position-static">
             <p class="blender-pro-bold main-slider-title mb-5"><?php echo $myposts[$i]->post_title; ?></p>
-            <a class="btn btn-outline-light mb-3 btn-main-slider montserrat-medium mr-md-3" href="/data-products">View Products</a>
-            <a class="btn btn-warning mb-3 btn-main-slider montserrat-medium" href="/qualification-process/">Get Started!</a>
+            <a class="btn btn-outline-light mb-3 btn-main-slider montserrat-medium mr-md-3" href="/data-products/">View Products</a>
+            <a class="btn btn-warning mb-3 btn-main-slider montserrat-medium" href="/qualification-process/">Get Started</a>
           </div>
         </div>
       </div>

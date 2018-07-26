@@ -107,7 +107,7 @@
               )); ?>
             </ul>
           </div>
-          <div class="col-md-12 text-center rights mt-5 mb-3">Copyright © 2016-2018 OptionMetrics, LLC</div>
+          <div class="col-md-12 text-center rights mt-5 mb-3">Copyright © 2018 OptionMetrics, LLC</div>
         </div>
       </div>
     </footer>

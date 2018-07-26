@@ -26,7 +26,7 @@
             </div>
             <div class="col-8">
               <p class="text-blue-dark montserrat-medium news-mini mb-1"><?php the_title(); ?></p>
-              <p class="text-grey-dark lato-light news-mini mb-1"><?php echo get_the_content(); ?></p>
+              <p class="text-grey-dark lato-regular news-mini mb-1"><?php echo get_the_content(); ?></p>
               <a class="btn btn-link pl-0 text-blue-dark montserrat-medium">
                 READ MORE
                 <span class="fa fa-angle-double-right"></span>

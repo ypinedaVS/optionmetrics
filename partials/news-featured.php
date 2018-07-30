@@ -13,5 +13,5 @@
 <?php get_template_part( 'partials/news', 'date-big' ); ?>
 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Featured News And Events" class="img-fluid w-100 mb-3" />
 <p class="text-blue montserrat-medium h5 text-center text-md-left"><?php the_title(); ?></p>
-<p class="text-grey lato-light h5 text-center text-md-left mb-5"><?php echo get_the_content(); ?></p>
+<p class="text-grey lato-regular h5 text-center text-md-left mb-5"><?php echo get_the_content(); ?></p>
 <?php endwhile; endif; ?>

@@ -194,7 +194,7 @@
         </div>
         <div class="col-sm-12 col-md-5 col-xl-6 tab-content">
           <p class="section-title montserrat-medium mt-4">Why Use OptionMetrics Historical Options Data</p>
-          <p class="text-grey lato-light h5 mb-5">Using the tool for graphing realized nd implied volatility data.</p>
+          <p class="text-grey lato-regular h5 mb-5">Using the tool for graphing realized nd implied volatility data.</p>
           <button class="btn btn-warning montserrat-medium btn-main-slider btn-get-started">Get Started</button>
         </div>
       </div>

@@ -36,8 +36,8 @@
             </div>
             <div class="col-6 col-md-7 hide-show-more">
               <p class="text-blue-dark montserrat-medium news-mini mb-1"><?php the_title(); ?></p>
-              <p class="text-grey-dark lato-light news-mini mb-1 _content"><?php echo get_the_content(); ?></p>
-              <a class="btn btn-link pl-0 text-blue-dark montserrat-medium">
+              <p class="text-grey-dark lato-regular news-mini mb-1 _content"><?php echo get_the_content(); ?></p>
+              <a class="btn btn-link pl-0 text-blue-dark montserrat-medium" href="<?php the_permalink(); ?>">
                 READ MORE
                 <span class="fa fa-angle-double-right"></span>
               </a>

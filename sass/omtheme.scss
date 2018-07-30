@@ -620,17 +620,19 @@ table {
 .content-nav-graph {
   margin-bottom: 10px;
   width: 100%;
-  .nav-graph-link1 {
+  cursor: pointer;
+  .nav-graph-link {
+    width: 100%;
+    border: none;
     color: #000;
     display: flex;
+    border-radius: 3px;
     flex-direction: row;
-    border-radius: 5px;
     text-decoration: none;
-    width: 100%;
+    background-color: #f7f7f7;
     &:hover {
-      background-color: $grey-light-hove;
-      box-shadow: 2px 2px 5px $grey-dark-shadow;
-      border-left: 5px solid $orange;
+      text-decoration: none;
+      background-color: #f7f7f7;
     }
     img {
       width: 15%;
@@ -639,159 +641,41 @@ table {
     p {
       margin: auto 0;
     }  
-  }
-  .nav-graph-link2 {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%;
-    &:hover {
-      background-color: $grey-light-hove;
-      box-shadow: 2px 2px 5px $grey-dark-shadow;
-      border-left: 5px solid $green;
-    }
-    img {
-      width: 15%;
-      height: 15%;
-    }
-    p {
-      margin: auto 0;
-    }  
-  }
-  .nav-graph-link3 {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%;
-    &:hover {
-      background-color: $grey-light-hove;
-      box-shadow: 2px 2px 5px $grey-dark-shadow;
-      border-left: 5px solid $ping;
-    }
-    img {
-      width: 15%;
-      height: 15%;
-    }
-    p {
-      margin: auto 0;
-    }  
-  }
-  .nav-graph-link4 {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%;
-    &:hover {
-      background-color: $grey-light-hove;
-      box-shadow: 2px 2px 5px $grey-dark-shadow;
-      border-left: 5px solid $blue-i;
-    }
-    img {
-      width: 15%;
-      height: 15%;
-    }
-    p {
-      margin: auto 0;
-    }  
-  }
-  .nav-graph-link5 {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%;
-    &:hover {
-      background-color: $grey-light-hove;
-      box-shadow: 2px 2px 5px $grey-dark-shadow;
-      border-left: 5px solid $purple;
-    }
-    img {
-      width: 15%;
-      height: 15%;
-    }
-    p {
-      margin: auto 0;
-    }
   }
 }
 .card {
   border: none !important;
-  #headingOne {
+  #collapseOne, #headingOne {
     border-left: 3px solid $orange;
-  }
-  .heading {
-    border-top: none !important;
-    border-bottom: none !important;
-    border-right: none !important;
-    a {
-      color: #000;
-      text-decoration: none;
-      width: 100%;
-      display: flex;
-      text-decoration: none;
-      border: none;
-      &:hover {
-        background-color: $grey-light-hove;
-        box-shadow: 2px 2px 5px $grey-dark-shadow;
-      }
-      &.active {
-        background-color: $grey-light-hove;
-        box-shadow: 2px 2px 5px $grey-dark-shadow;
-      }
-      img {
-        width: 7%;
-        height: 7%;
-      }
-      p {
-        margin: auto 0;
-      }
-    }
-  }
-  .text-body1 {
-    border-left: 3px solid $orange;
+    background: #f7f7f7;
   }
 }
 .card{
   border: none !important;
-  #headingTwo{
+  #collapseTwo, #headingTwo {
     border-left: 3px solid $green;
-  }
-  .text-body2 {
-    border-left: 3px solid $green;
+    background: #f7f7f7;
   }
 }
 .card{
   border: none !important;
-  #headingThree{
+  #collapseThree, #headingThree {
     border-left: 3px solid $ping;
-  }
-  .text-body3 {
-    border-left: 3px solid $ping;
+    background: #f7f7f7;
   }
 }
 .card{
   border: none !important;
-  #headingFour{
+  #collapseFour , #headingFour {
     border-left: 3px solid $blue-i;
-  }
-  .text-body4 {
-    border-left: 3px solid $blue-i;
+    background: #f7f7f7;
   }
 }
 .card{
   border: none !important;
-  #headingFive{
+  #collapseFive , #headingFive {
     border-left: 3px solid $purple;
-  }
-  .text-body5 {
-    border-left: 3px solid $purple;
+    background: #f7f7f7;
   }
 }
 .wuo-img {

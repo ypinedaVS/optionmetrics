@@ -18,45 +18,90 @@
       <?php get_template_part( 'partials/maps' ); ?>
       <div class="row d-flex align-items-center mb-5 pt-5 mx-0">
         <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 d-sm-none d-none d-lg-block d-xl-block d-md-block">
-          <div class="tab-content" id="nav-tabContentGraph">
-            <div class="tab-pane fade show active" role="tabpanel">
-              <nav>
-                <div class="nav nav-tabs justify-content-between" id="nav-tab-graph" role="tablist" style="border:none!important;margin-bottom:30px;">
-                  <div class="content-nav-graph">
-                    <a class="nav-graph-link1 active" id="comprehensive-tab" data-toggle="tab" href="#comprehensive" role="tab" aria-controls="comprehensive" aria-selected="true">
-                      <img src="<?php gtdu('/assets/Commprensive_icon.png'); ?>" alt="icon">
-                      <p>Comprehensive Illustration</p>
-                    </a>
-                  </div>
-                  <div class="content-nav-graph">
-                    <a class="nav-graph-link2" id="accurate-tab" data-toggle="tab" href="#accurate" role="tab" aria-controls="accurate" aria-selected="false">
-                      <img src="<?php gtdu('/assets/Accumulate_icon.png'); ?>" alt="icon">
-                      <p>Accurate Illustration</p>
-                    </a>
-                  </div>
-                  <div class="content-nav-graph">
-                    <a class="nav-graph-link3" id="continouos-tab" data-toggle="tab" href="#continouos" role="tab" aria-controls="continouos" aria-selected="false">
-                      <img src="<?php gtdu('/assets/Continuos_icon.png'); ?>" alt="icon">
-                      <p>Continouos Illustration</p>
-                    </a>
-                  </div>
-                  <div class="content-nav-graph">
-                    <a class="nav-graph-link4" id="daily-tab" data-toggle="tab" href="#daily" role="tab" aria-controls="daily" aria-selected="false">
-                      <img src="<?php gtdu('/assets/Daily_icon.png'); ?>" alt="icon">
-                      <p>Daily Illustration</p>
-                    </a>
-                  </div>
-                  <div class="content-nav-graph">
-                    <a class="nav-graph-link5" id="customer-tab" data-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="false">
-                      <img src="<?php gtdu('/assets/Customer_icon.png'); ?>" alt="icon">
-                      <p>Customer Illustration</p>
-                    </a>
-                  </div>
+          <div id="accordion">
+            <div class="card content-nav-graph">
+              <div id="headingOne">
+                <a class="nav-graph-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <img src="<?php gtdu('/assets/Commprensive_icon.png'); ?>" alt="icon">
+                  <p>Comprehensive Coverage</p>
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF’s and ADR’s) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
                 </div>
-              </nav>
+              </div>
+            </div>
+
+            <div class="card content-nav-graph">
+              <div id="headingTwo">
+                <a class="nav-graph-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <img src="<?php gtdu('/assets/Accumulate_icon.png'); ?>" alt="icon">
+                  <p>Accurate Calculations</p>
+                </a>
+              </div>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  For each option price, we calculate an accurate implied volatility and store it along with the option sensitivities (delta, gamma, vega, and theta). Both European and American models are used as appropriate, with dividend/split adjustments correctly incorporated.
+
+                  In addition, a standardized constant-maturity volatility surface is calculated for each security every day, including interpolated implied volatilities over a wide range of expirations and moneyness (by delta). You can use our volatility surface to create your own volatility trading strategies, whether simple or complex.
+                </div>
+              </div>
+            </div>
+
+            <div class="card content-nav-graph">
+              <div id="headingThree">
+                <a class="nav-graph-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <img src="<?php gtdu('/assets/Continuos_icon.png'); ?>" alt="icon">
+                  <p>Continuos Time Series</p>
+                </a>
+              </div>
+
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Our database handles underlying symbol changes, dividend payments, and split/spinoff adjustments for you automatically. A permanent ID is associated with each instrument (equity, index, or option) to allow it to be easily tracked over time even when the option symbol, strike price or deliverables change. We also include a record of underlying security name and ticker changes, to allow you to easily search for options on securities either no longer trade or trade under a new ticker symbol.
+                </div>
+              </div>
+            </div>
+
+            <div class="card content-nav-graph">
+              <div id="headingFour">
+                <a class="nav-graph-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <img src="<?php gtdu('/assets/Daily_icon.png'); ?>" alt="icon">
+                  <p>Daily Updates</p>
+                </a>
+              </div>
+              
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  IvyDB US is updated daily to incorporate new end-of-day prices in all the equity and option exchanges we follow. A daily patch file is also provided which contains corrections to previous prices or calculations when needed. Your IvyDB database is always current and ready to use.
+                </div>
+              </div>
+            </div>
+
+            <div class="card content-nav-graph">
+              <div id="headingFive">
+                <a class="nav-graph-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <img src="<?php gtdu('/assets/Customer_icon.png'); ?>" alt="icon">
+                  <p>Customer Support</p>
+                </a>
+              </div>
+              
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                  As an OptionMetrics customer, you will receive dedicated support and expert guidance from day one. We provide you with step-by-step manuals for installation, and in-depth Reference Manuals for your day-to-day use. Should you have any questions, our support team is available Monday through Friday, 8AM to 6PM (EST); for urgent issues, assistance is available 24/7.
+                </div>
+              </div>
             </div>
           </div>
+
+
+
+
+
         </div>
+
         <div class="col-md-5 col-xl-6 tab-content d-sm-none d-none d-lg-block d-xl-block d-md-block">
           <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
           <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">

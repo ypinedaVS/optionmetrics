@@ -448,143 +448,52 @@ table.dataTable tbody tr {
 
 .content-nav-graph {
   margin-bottom: 10px;
-  width: 100%; }
-  .content-nav-graph .nav-graph-link1 {
+  width: 100%;
+  cursor: pointer; }
+  .content-nav-graph .nav-graph-link {
+    width: 100%;
+    border: none;
     color: #000;
     display: flex;
+    border-radius: 3px;
     flex-direction: row;
-    border-radius: 5px;
     text-decoration: none;
-    width: 100%; }
-    .content-nav-graph .nav-graph-link1:hover {
-      background-color: #ececec;
-      box-shadow: 2px 2px 5px #888888;
-      border-left: 5px solid #d6875a; }
-    .content-nav-graph .nav-graph-link1 img {
+    background-color: #f7f7f7; }
+    .content-nav-graph .nav-graph-link:hover {
+      text-decoration: none;
+      background-color: #f7f7f7; }
+    .content-nav-graph .nav-graph-link img {
       width: 15%;
       height: 15%; }
-    .content-nav-graph .nav-graph-link1 p {
-      margin: auto 0; }
-  .content-nav-graph .nav-graph-link2 {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%; }
-    .content-nav-graph .nav-graph-link2:hover {
-      background-color: #ececec;
-      box-shadow: 2px 2px 5px #888888;
-      border-left: 5px solid #abc054; }
-    .content-nav-graph .nav-graph-link2 img {
-      width: 15%;
-      height: 15%; }
-    .content-nav-graph .nav-graph-link2 p {
-      margin: auto 0; }
-  .content-nav-graph .nav-graph-link3 {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%; }
-    .content-nav-graph .nav-graph-link3:hover {
-      background-color: #ececec;
-      box-shadow: 2px 2px 5px #888888;
-      border-left: 5px solid #e28890; }
-    .content-nav-graph .nav-graph-link3 img {
-      width: 15%;
-      height: 15%; }
-    .content-nav-graph .nav-graph-link3 p {
-      margin: auto 0; }
-  .content-nav-graph .nav-graph-link4 {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%; }
-    .content-nav-graph .nav-graph-link4:hover {
-      background-color: #ececec;
-      box-shadow: 2px 2px 5px #888888;
-      border-left: 5px solid #6abcc2; }
-    .content-nav-graph .nav-graph-link4 img {
-      width: 15%;
-      height: 15%; }
-    .content-nav-graph .nav-graph-link4 p {
-      margin: auto 0; }
-  .content-nav-graph .nav-graph-link5 {
-    color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 5px;
-    text-decoration: none;
-    width: 100%; }
-    .content-nav-graph .nav-graph-link5:hover {
-      background-color: #ececec;
-      box-shadow: 2px 2px 5px #888888;
-      border-left: 5px solid #8e81f6; }
-    .content-nav-graph .nav-graph-link5 img {
-      width: 15%;
-      height: 15%; }
-    .content-nav-graph .nav-graph-link5 p {
+    .content-nav-graph .nav-graph-link p {
       margin: auto 0; }
 
 .card {
   border: none !important; }
-  .card #headingOne {
-    border-left: 3px solid #d6875a; }
-  .card .heading {
-    border-top: none !important;
-    border-bottom: none !important;
-    border-right: none !important; }
-    .card .heading a {
-      color: #000;
-      text-decoration: none;
-      width: 100%;
-      display: flex;
-      text-decoration: none;
-      border: none; }
-      .card .heading a:hover {
-        background-color: #ececec;
-        box-shadow: 2px 2px 5px #888888; }
-      .card .heading a.active {
-        background-color: #ececec;
-        box-shadow: 2px 2px 5px #888888; }
-      .card .heading a img {
-        width: 7%;
-        height: 7%; }
-      .card .heading a p {
-        margin: auto 0; }
-  .card .text-body1 {
-    border-left: 3px solid #d6875a; }
+  .card #collapseOne, .card #headingOne {
+    border-left: 3px solid #d6875a;
+    background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #headingTwo {
-    border-left: 3px solid #abc054; }
-  .card .text-body2 {
+  .card #collapseTwo, .card #headingTwo {
     border-left: 3px solid #abc054; }
 
 .card {
   border: none !important; }
-  .card #headingThree {
-    border-left: 3px solid #e28890; }
-  .card .text-body3 {
+  .card #collapseThree, .card #headingThree {
     border-left: 3px solid #e28890; }
 
 .card {
   border: none !important; }
-  .card #headingFour {
+  .card #collapseFour, .card #headingFour {
     border-left: 3px solid #6abcc2; }
   .card .text-body4 {
     border-left: 3px solid #6abcc2; }
 
 .card {
   border: none !important; }
-  .card #headingFive {
-    border-left: 3px solid #8e81f6; }
-  .card .text-body5 {
+  .card #collapseFive, .card #headingFive {
     border-left: 3px solid #8e81f6; }
 
 .wuo-img {

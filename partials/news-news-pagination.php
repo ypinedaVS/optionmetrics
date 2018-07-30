@@ -35,7 +35,7 @@
                   <p class="text-blue montserrat-medium news-mini mb-1"><?php the_title(); ?></p>
                   <p class="text-grey lato-regular small" style="font-style:italic"><?php echo get_the_date( 'F jS, Y' ); ?></p>
                   <p class="text-grey lato-regular news-mini mb-1 _content"><?php echo get_the_content(); ?></p>
-                  <a class="btn btn-link pl-0 text-blue-dark montserrat-medium o-50">
+                  <a class="btn btn-link pl-0 text-blue-dark montserrat-medium o-50" href="<?php the_permalink(); ?>">
                     READ MORE
                     <span class="fa fa-angle-double-right"></span>
                   </a>
@@ -53,7 +53,7 @@
   $sc_args = '[wp-datatable id="news"]
     search: true,
     responsive: true,
-    pageLength: 5,
+    pageLength: 6,
     lengthChange: false,
     bInfo: false,
     language: {

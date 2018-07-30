@@ -41,7 +41,7 @@ function add_link_atts( $atts, $item, $args )
 {
   if( $args->theme_location == 'primary' )
   {
-    $atts['class'] = 'nav-link text-white ml-lg-4 montserrat-medium';
+    $atts['class'] = 'nav-link text-white ml-lg-2 ml-xl-4 montserrat-medium';
   }
   if( $args->theme_location == 'footer-about' )
   {

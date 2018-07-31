@@ -794,10 +794,17 @@ table {
     border-color: #d39e00;
   }
 }
-.icono{
+.iconoL{
   margin: 0px 10px;
-  color: $grey-icon;
-  font-size: 2em !important;
+  color: #0077b5;
+  font-size: 1.5em !important;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.iconoF{
+  margin: 0px 10px;
+  color: #3b5998;
+  font-size: 1.5em !important;
   padding: 10px 0px;
   cursor: pointer;
 }

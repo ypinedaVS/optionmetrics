@@ -15,7 +15,9 @@
           <p class="section-title text-blue montserrat-regular">Data Analysis Products</p>
         </div>
       </div>
+
       <?php get_template_part( 'partials/maps' ); ?>
+
       <div class="row d-flex align-items-center mb-5 pt-5 mx-0">
         <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 d-sm-none d-none d-lg-block d-xl-block d-md-block">
           <div id="accordion">
@@ -95,11 +97,6 @@
               </div>
             </div>
           </div>
-
-
-
-
-
         </div>
 
         <div class="col-md-5 col-xl-6 tab-content d-sm-none d-none d-lg-block d-xl-block d-md-block">
@@ -194,7 +191,7 @@
         </div>
         <div class="col-sm-12 col-md-5 col-xl-6 tab-content">
           <p class="section-title montserrat-medium mt-4">Why Use OptionMetrics Historical Options Data</p>
-          <p class="text-grey lato-regular h5 mb-5">Using the tool for graphing realized nd implied volatility data.</p>
+          <p class="text-grey lato-light h5 mb-5">Using the tool for graphing realized nd implied volatility data.</p>
           <button class="btn btn-warning montserrat-medium btn-main-slider btn-get-started">Get Started</button>
         </div>
       </div>

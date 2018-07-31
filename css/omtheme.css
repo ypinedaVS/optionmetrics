@@ -477,24 +477,26 @@ table.dataTable tbody tr {
 .card {
   border: none !important; }
   .card #collapseTwo, .card #headingTwo {
-    border-left: 3px solid #abc054; }
+    border-left: 3px solid #abc054;
+    background: #f7f7f7; }
 
 .card {
   border: none !important; }
   .card #collapseThree, .card #headingThree {
-    border-left: 3px solid #e28890; }
+    border-left: 3px solid #e28890;
+    background: #f7f7f7; }
 
 .card {
   border: none !important; }
   .card #collapseFour, .card #headingFour {
-    border-left: 3px solid #6abcc2; }
-  .card .text-body4 {
-    border-left: 3px solid #6abcc2; }
+    border-left: 3px solid #6abcc2;
+    background: #f7f7f7; }
 
 .card {
   border: none !important; }
   .card #collapseFive, .card #headingFive {
-    border-left: 3px solid #8e81f6; }
+    border-left: 3px solid #8e81f6;
+    background: #f7f7f7; }
 
 .wuo-img {
   text-align: center; }
@@ -593,10 +595,17 @@ table.dataTable tbody tr {
     background-color: #e0a800;
     border-color: #d39e00; }
 
-.icono {
+.iconoL {
   margin: 0px 10px;
-  color: #cccccc;
-  font-size: 2em !important;
+  color: #0077b5;
+  font-size: 1.5em !important;
+  padding: 10px 0px;
+  cursor: pointer; }
+
+.iconoF {
+  margin: 0px 10px;
+  color: #3b5998;
+  font-size: 1.5em !important;
   padding: 10px 0px;
   cursor: pointer; }
 

@@ -41,7 +41,9 @@
   font-family: 'Montserrat Regular' !important; }
 
 .text-grey {
-  color: #363636 !important; }
+  color: #363636 !important;
+  text-align: justify;
+  font-weight: 500; }
 
 .text-grey-dark {
   color: #202020 !important; }
@@ -357,7 +359,9 @@ table.dataTable tbody tr {
     filter: grayscale(0%); }
 
 .page-wrapper-up {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  width: 90%;
+  margin: auto; }
   @media (min-width: 768px) {
     .page-wrapper-up {
       top: -150px; } }
@@ -438,8 +442,9 @@ table.dataTable tbody tr {
 
 .page-feature-text {
   font-family: 'Lato Light';
-  font-size: 16px;
-  color: #000000; }
+  font-size: 1em;
+  color: #000000;
+  font-weight: 600; }
 
 .rights {
   color: #ffffff;
@@ -562,7 +567,9 @@ table.dataTable tbody tr {
   .form-cont address {
     font-family: 'Lato Light';
     font-size: 16px;
-    color: #000000; }
+    color: #000000;
+    font-weight: 500;
+    text-align: justify; }
 
 @media (max-width: 480px) {
   .form-cont .logo-mob,
@@ -642,3 +649,6 @@ table.dataTable tbody tr {
 @media (max-width: 768px) {
   .form-cont-gq {
     padding: 0px 1% !important; } }
+
+.align-t {
+  text-align: justify !important; }

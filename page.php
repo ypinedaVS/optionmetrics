@@ -29,7 +29,7 @@
                 </a>
               </div>
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body align-t">
                   IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF’s and ADR’s) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
                 </div>
               </div>
@@ -44,7 +44,7 @@
               </div>
 
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body align-t">
                   For each option price, we calculate an accurate implied volatility and store it along with the option sensitivities (delta, gamma, vega, and theta). Both European and American models are used as appropriate, with dividend/split adjustments correctly incorporated.
 
                   In addition, a standardized constant-maturity volatility surface is calculated for each security every day, including interpolated implied volatilities over a wide range of expirations and moneyness (by delta). You can use our volatility surface to create your own volatility trading strategies, whether simple or complex.
@@ -61,7 +61,7 @@
               </div>
 
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body align-t">
                   Our database handles underlying symbol changes, dividend payments, and split/spinoff adjustments for you automatically. A permanent ID is associated with each instrument (equity, index, or option) to allow it to be easily tracked over time even when the option symbol, strike price or deliverables change. We also include a record of underlying security name and ticker changes, to allow you to easily search for options on securities either no longer trade or trade under a new ticker symbol.
                 </div>
               </div>
@@ -76,7 +76,7 @@
               </div>
               
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body align-t">
                   IvyDB US is updated daily to incorporate new end-of-day prices in all the equity and option exchanges we follow. A daily patch file is also provided which contains corrections to previous prices or calculations when needed. Your IvyDB database is always current and ready to use.
                 </div>
               </div>
@@ -91,7 +91,7 @@
               </div>
               
               <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                <div class="card-body">
+                <div class="card-body align-t">
                   As an OptionMetrics customer, you will receive dedicated support and expert guidance from day one. We provide you with step-by-step manuals for installation, and in-depth Reference Manuals for your day-to-day use. Should you have any questions, our support team is available Monday through Friday, 8AM to 6PM (EST); for urgent issues, assistance is available 24/7.
                 </div>
               </div>
@@ -115,7 +115,7 @@
               </a>
             </div>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-              <div class="card-body text-body1">
+              <div class="card-body text-body1 align-t">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -139,7 +139,7 @@
               </a>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body text-body2">
+              <div class="card-body text-body2 align-t">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -152,7 +152,7 @@
               </a>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body text-body3">
+              <div class="card-body text-body3 align-t">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -165,7 +165,7 @@
               </a>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body text-body4">
+              <div class="card-body text-body4 align-t">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -178,7 +178,7 @@
               </a>
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div class="card-body text-body5">
+              <div class="card-body text-body5 align-t">
                 IvyDB contains a complete historical record of end-of-day data on all US exchange-traded equity and index options (including options on ETF's and ADR's) from January 1996 onward. The data includes both daily option pricing information (symbol, date, closing, bid and ask quote, volume, and open interest) as well as high, low, and closing prices for the underlying equity or index. IvyDB also provides all interest rate, dividend, and corporate action information for each security, so you can correlate your own option pricing models with calculations.
               </div>
             </div>
@@ -192,7 +192,7 @@
         <div class="col-sm-12 col-md-5 col-xl-6 tab-content">
           <p class="section-title montserrat-medium mt-4">Why Use OptionMetrics Historical Options Data</p>
           <p class="text-grey lato-light h5 mb-5">Using the tool for graphing realized nd implied volatility data.</p>
-          <button class="btn btn-warning montserrat-medium btn-main-slider btn-get-started">Get Started</button>
+          <a class="btn btn-warning mb-3 btn-main-slider montserrat-medium" href="/qualification-process/">Get Started</a>
         </div>
       </div>
     </div>
@@ -203,7 +203,7 @@
   <!-- News & Events page -->
   <?php if ( is_page( 'news-events') ) : ?>
   <div class="container">
-    <div class="position-relative page-wrapper-up pt-5 ">
+    <div class="position-relative page-wrapper-up pt-5">
       <div class="row">
         <div class="col-12 px-5">
           <?php get_template_part( 'partials/news', 'featured-page' ); ?>
@@ -219,7 +219,7 @@
   <!-- Contact page-->
   <?php if ( is_page( 'contact') ) : ?>
   <div class="container">
-    <div class="position-relative page-wrapper-up pt-5 ">
+    <div class="position-relative page-wrapper-up pt-5">
       <div class="row">
         <div class="container-form col-lg-6 col-md-6 col-sm-12">
           <div class="form-cont">
@@ -232,11 +232,11 @@
         <div class="container-info col-lg-6 col-md-6 col-sm-12">
           <div class="form-cont">
             <div class="logo-mob">
-              <img class="logo_toggle" src="<?php gtdu('/assets/logo_toggle_menu.png'); ?>" alt="optionmetrics logo" id="header-logo" width="160px">
+              <img class="logo_toggle" src="<?php gtdu('/assets/logo_final/logo_white_back.png'); ?>" alt="optionmetrics logo" id="header-logo" width="160px">
             </div>
             <br>
             <br>
-            <address>
+            <address> 
               OptionMetrics LLC<br>
               1776 Broadway, Suite 1800<br>
               New Yord, NY 10019<br>
@@ -262,7 +262,6 @@
     </div>
   </div>
   <?php endif; ?>
-
   <!-- /Contact page -->
 
   <!-- Get qualification -->
@@ -278,7 +277,7 @@
       </div>
     </div>
   </div>
-<?php endif; ?>
+  <?php endif; ?>
   <!-- /Get qualification -->
 
   <!-- Research page -->

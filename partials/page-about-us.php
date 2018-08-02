@@ -1,6 +1,6 @@
 <div class="container">
   <div class="position-relative page-wrapper-up">
-    <div class="row">
+    <div class="row" style="padding: 0px 15px;">
       <div class="col-md-6 col-lg-4 pt-4 px-4 pb-0 pr-md-2 pt-md-5">
         <div class="row">
           <div class="col-md-3 text-center">
@@ -107,7 +107,7 @@
   </div>
 </div>
 <div class="container mb-5">
-  <div class="row">
+  <div class="row" style="padding: 0px 15px;">
     <div class="col-12">
       <p class="section-title montserrat-regular text-center mb-5 mt-5">Leaderships</p>
     </div>

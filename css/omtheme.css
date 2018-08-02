@@ -41,7 +41,9 @@
   font-family: 'Montserrat Regular' !important; }
 
 .text-grey {
-  color: #363636 !important; }
+  color: #363636 !important;
+  text-align: justify;
+  font-weight: 500; }
 
 .text-grey-dark {
   color: #202020 !important; }
@@ -361,7 +363,9 @@ table.dataTable tbody tr {
     filter: grayscale(0%); }
 
 .page-wrapper-up {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  width: 90%;
+  margin: auto; }
   @media (min-width: 768px) {
     .page-wrapper-up {
       top: -150px; } }
@@ -450,8 +454,9 @@ table.dataTable tbody tr {
 
 .page-feature-text {
   font-family: 'Lato Light';
-  font-size: 16px;
-  color: #000000; }
+  font-size: 1em;
+  color: #000000;
+  font-weight: 600; }
 
 .rights {
   color: #ffffff;
@@ -482,31 +487,31 @@ table.dataTable tbody tr {
 
 .card {
   border: none !important; }
-  .card #collapseOne, .card #headingOne {
+  .card .orange1, .card .orange1 {
     border-left: 3px solid #d6875a;
     background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #collapseTwo, .card #headingTwo {
+  .card .green2, .card .green2 {
     border-left: 3px solid #abc054;
     background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #collapseThree, .card #headingThree {
+  .card .ping3, .card .ping3 {
     border-left: 3px solid #e28890;
     background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #collapseFour, .card #headingFour {
+  .card .blue4, .card .blue4 {
     border-left: 3px solid #6abcc2;
     background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #collapseFive, .card #headingFive {
+  .card .purple5, .card .purple5 {
     border-left: 3px solid #8e81f6;
     background: #f7f7f7; }
 
@@ -574,7 +579,9 @@ table.dataTable tbody tr {
   .form-cont address {
     font-family: 'Lato Light';
     font-size: 16px;
-    color: #000000; }
+    color: #000000;
+    font-weight: 500;
+    text-align: justify; }
 
 @media (max-width: 480px) {
   .form-cont .logo-mob,
@@ -607,10 +614,17 @@ table.dataTable tbody tr {
     background-color: #e0a800;
     border-color: #d39e00; }
 
-.icono {
+.iconoL {
   margin: 0px 10px;
-  color: #cccccc;
-  font-size: 2em !important;
+  color: #0077b5;
+  font-size: 1.5em !important;
+  padding: 10px 0px;
+  cursor: pointer; }
+
+.iconoF {
+  margin: 0px 10px;
+  color: #3b5998;
+  font-size: 1.5em !important;
   padding: 10px 0px;
   cursor: pointer; }
 
@@ -647,3 +661,6 @@ table.dataTable tbody tr {
 @media (max-width: 768px) {
   .form-cont-gq {
     padding: 0px 1% !important; } }
+
+.align-t {
+  text-align: justify !important; }

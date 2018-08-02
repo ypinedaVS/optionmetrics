@@ -3,7 +3,7 @@
         <div class="row justify-content-md-around justify-content-xl-center">
           <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start align-items-center mb-4">
             <a href="<?php echo get_home_url(); ?>" class="nav d-xl-none">
-              <img src="<?php gtdu('/assets/logo.png'); ?>" alt="Logo" />
+              <img src="<?php gtdu('/assets/logo_final/logo_optionmetrics_footer.PNG'); ?>" alt="Logo" />
             </a>
           </div>
           <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end mb-4 align-items-center">

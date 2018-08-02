@@ -3,6 +3,8 @@
 
 .text-grey {
   color: $grey !important;
+  text-align: justify;
+  font-weight: 500;
 }
 .text-grey-dark {
   color: $grey-dark !important;
@@ -496,6 +498,8 @@ table {
 
 .page-wrapper-up {
   background-color: $white;
+  width: 90%;
+  margin: auto;
   @media (min-width: 768px) {
     top: -150px;
   }
@@ -624,8 +628,9 @@ table {
 }
 .page-feature-text {
   font-family: 'Lato Light';
-  font-size: 16px;
+  font-size: 1em;
   color: $text;
+  font-weight: 600;
 }
 
 .rights {
@@ -771,6 +776,8 @@ table {
     font-family: 'Lato Light';
     font-size: 16px;
     color: #000000;
+    font-weight: 500;
+    text-align: justify;
   }
 }
 @media (max-width: 480px) {
@@ -810,10 +817,17 @@ table {
     border-color: #d39e00;
   }
 }
-.icono{
+.iconoL{
   margin: 0px 10px;
-  color: $grey-icon;
-  font-size: 2em !important;
+  color: #0077b5;
+  font-size: 1.5em !important;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.iconoF{
+  margin: 0px 10px;
+  color: #3b5998;
+  font-size: 1.5em !important;
   padding: 10px 0px;
   cursor: pointer;
 }
@@ -856,4 +870,8 @@ table {
   .form-cont-gq {
     padding: 0px 1% !important;
   }
+}
+
+.align-t {
+  text-align: justify !important;
 }

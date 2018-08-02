@@ -5,15 +5,16 @@
 ?>
 
 <div class="container">
-  <div class="position-relative page-wrapper-up">
+  <div class="position-relative page-wrapper-up <?php if( $cat == 'careers' ) echo 'page-wrapper-up-careers'; ?>">
     <div class="row">
       <div class="col-12 p-4 p-md-5">
-        <a href="<?php echo get_home_url() . '/' . $cat . '/'; ?>" class="btn btn-link text-left text-grey-light pl-lg-5">
+        <?php $redirect = $cat == 'careers' ? 'about-us?d=true' : $cat . '/'; ?>
+        <a href="<?php echo get_home_url() . '/' . $redirect; ?>" class="btn btn-link text-left text-grey-light pl-lg-5">
           <span class="fa fa-long-arrow-left"></span>
           Back
         </a>
       </div>
-      <div class="col-12 text-center col-md-10 offset-md-1">
+      <div class="col-12 col-md-10 offset-md-1 <?php echo $cat == 'careers' ? 'text-left' : 'text-center'; ?>">
         <div class="row">
           <div class="col-12 col-md-8 offset-md-2">
             <?php
@@ -23,32 +24,50 @@
             ?>
           </div>
         </div>
-        <p class="section-title text-blue h4" style="font-weight:bold;"><?php the_title(); ?></p>
+        <p class="section-title text-blue h4 px-3" style="font-weight:bold;"><?php the_title(); ?></p>
         <?php if( $cat == 'news-events' ) : ?>
           <p class="montserrat-medium text-blue h6" style="font-size:18px;">
             <?php echo get_the_date( 'D, F j, Y' ); ?>
           </p>
-        <?php else : ?>
+        <?php elseif( $cat == 'research' ) : ?>
           <p class="text-grey lato-regular" style="font-style:italic">
             <?php echo get_the_date( 'F jS, Y' ); ?>
           </p>
+        <?php elseif( $cat == 'careers' ) : ?>
+          <div class="row mt-4 text-left px-3">
+            <div class="col-5 col-xl-3" style="font-weight:bold;">Ref. Number</div>
+            <div class="col-7 col-xl-9"><?php echo get_post_meta(get_the_ID(), 'careers_ref_number', true); ?></div>
+          </div>
+          <div class="row text-left px-3">
+            <div class="col-5 col-xl-3" style="font-weight:bold;">Location</div>
+            <div class="col-7 col-xl-9"><?php echo get_post_meta(get_the_ID(), 'careers_location', true); ?></div>
+          </div>
+          <div class="row text-left px-3">
+            <div class="col-5 col-xl-3" style="font-weight:bold;">Position Type</div>
+            <div class="col-7 col-xl-9"><?php echo get_post_meta(get_the_ID(), 'careers_type', true); ?></div>
+          </div>
+          <div class="row text-left px-3 mb-4">
+            <div class="col-5 col-xl-3" style="font-weight:bold;">Start Date</div>
+            <div class="col-7 col-xl-9"><?php echo get_post_meta(get_the_ID(), 'careers_start_date', true); ?></div>
+          </div>
         <?php endif; ?>
-        <!-- Custom Fields here -->
-
-        <!-- /Custom Fields here -->
-        <p class="_content lato-regular text-grey"><?php echo get_the_content(); ?></p>
+        <div class="_content lato-regular text-grey px-3"><?php echo get_the_content(); ?></div>
         <?php if( $cat == 'news-events' ) : ?>
           <a href="#" class="btn btn-link text-blue montserrat-medium small">
             Register Now!
           </a>
-        <?php else : ?>
+        <?php elseif( $cat == 'research' ) : ?>
           <a href="#" class="btn btn-link text-blue montserrat-medium small">
             Download
             <span class="fa fa-download"></span>
           </a>
+        <?php elseif( $cat == 'careers' ) : ?>
+          <a href="mailto:user@email.com" class="btn btn-link text-blue montserrat-medium small">
+            Want to apply? Send us an email
+          </a>
         <?php endif; ?>
         <!-- LinkedIn share button here -->
-        
+
         <!-- /LinkedIn share button here -->
       </div>
     </div>

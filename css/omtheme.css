@@ -209,6 +209,10 @@ table.dataTable tbody tr {
 .hide-show-more .more-link {
   display: none; }
 
+@media (min-width: 992px) {
+  .hide-show-more ._content._content-research {
+    padding: 0px 180px; } }
+
 .hide-show-more ._content:after {
   content: '...'; }
 
@@ -361,6 +365,14 @@ table.dataTable tbody tr {
   @media (min-width: 768px) {
     .page-wrapper-up {
       top: -150px; } }
+  .page-wrapper-up.page-wrapper-up-careers {
+    top: -140px; }
+    @media (min-width: 768px) {
+      .page-wrapper-up.page-wrapper-up-careers {
+        top: -400px; } }
+    @media (min-width: 992px) {
+      .page-wrapper-up.page-wrapper-up-careers {
+        top: -250px; } }
 
 @media (min-width: 576px) {
   .about-us-form {
@@ -477,24 +489,26 @@ table.dataTable tbody tr {
 .card {
   border: none !important; }
   .card #collapseTwo, .card #headingTwo {
-    border-left: 3px solid #abc054; }
+    border-left: 3px solid #abc054;
+    background: #f7f7f7; }
 
 .card {
   border: none !important; }
   .card #collapseThree, .card #headingThree {
-    border-left: 3px solid #e28890; }
+    border-left: 3px solid #e28890;
+    background: #f7f7f7; }
 
 .card {
   border: none !important; }
   .card #collapseFour, .card #headingFour {
-    border-left: 3px solid #6abcc2; }
-  .card .text-body4 {
-    border-left: 3px solid #6abcc2; }
+    border-left: 3px solid #6abcc2;
+    background: #f7f7f7; }
 
 .card {
   border: none !important; }
   .card #collapseFive, .card #headingFive {
-    border-left: 3px solid #8e81f6; }
+    border-left: 3px solid #8e81f6;
+    background: #f7f7f7; }
 
 .wuo-img {
   text-align: center; }

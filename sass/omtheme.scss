@@ -295,8 +295,15 @@ table {
   .more-link {
     display: none;
   }
-  ._content:after {
-    content: '...';
+  ._content {
+    &._content-research {
+      @media (min-width: 992px) {
+        padding: 0px 180px;
+      }
+    }
+    &:after {
+      content: '...';
+    }
   }
 }
 
@@ -492,6 +499,15 @@ table {
   @media (min-width: 768px) {
     top: -150px;
   }
+  &.page-wrapper-up-careers {
+    top: -140px;
+    @media (min-width: 768px) {
+      top: -400px;
+    }
+    @media (min-width: 992px) {
+      top: -250px;
+    }
+  }
 }
 
 .about-us-form {
@@ -640,7 +656,7 @@ table {
     }
     p {
       margin: auto 0;
-    }  
+    }
   }
 }
 .card {
@@ -825,7 +841,7 @@ table {
     border-color: #d39e00;
   }
 }
-.recaptcha-qualification, 
+.recaptcha-qualification,
 .qualification-text,
 .polip,
 .btn-submit-gq {

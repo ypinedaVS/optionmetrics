@@ -72,7 +72,7 @@
                   <p>Daily Updates</p>
                 </a>
               </div>
-              
+
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                 <div class="card-body">
                   IvyDB US is updated daily to incorporate new end-of-day prices in all the equity and option exchanges we follow. A daily patch file is also provided which contains corrections to previous prices or calculations when needed. Your IvyDB database is always current and ready to use.
@@ -87,7 +87,7 @@
                   <p>Customer Support</p>
                 </a>
               </div>
-              
+
               <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                 <div class="card-body">
                   As an OptionMetrics customer, you will receive dedicated support and expert guidance from day one. We provide you with step-by-step manuals for installation, and in-depth Reference Manuals for your day-to-day use. Should you have any questions, our support team is available Monday through Friday, 8AM to 6PM (EST); for urgent issues, assistance is available 24/7.
@@ -290,7 +290,7 @@
     <div class="position-relative page-wrapper-up">
       <div class="row">
         <div class="col-12 p-4 text-center">
-          <p class="section-title text-blue">Research</p>
+          <p class="section-title text-blue d-md-none">Research</p>
           <p class="text-blue o-50 lato-regular h6 mx-auto" style="max-width:880px;">OptionMetrics data is an essential component of many studies performed by both academics and practitioners. Below is a partial list of academic papers that used OptionMetrics data:</p>
         </div>
         <div class="col-12 px-4 pb-5 text-center hide-show-more d-md-none">

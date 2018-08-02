@@ -192,85 +192,99 @@
     </div>
   </div>
 </div>
-<div class="row m-0 p-5" style="background-image:url(<?php gtdu('/assets/partners-form-bg.png'); ?>);background-size:cover">
+<?php $jobs = new WP_Query( array( 'category_name' => 'careers' ) ); ?>
+<div id="form-careers" class="row m-0 p-5" style="background-image:url(<?php gtdu('/assets/partners-form-bg.png'); ?>);background-size:cover">
   <div class="container p-0">
     <div class="col-12 text-center p-0">
       <p class="section-title text-white montserrat-regular h4 mb-4">Be part of an exceptionally creative and intelligent team</p>
       <p class="text-white lato-regular mb-4">OptionMetrics is hiring. Be part  of developers, quants and econometrics specialists collaborating on proprietary next-gen data and analytic products. We encourage true ownership over projects and reward innovation. Join the company distinguished by its passion for volatility, data and analytic excellence and the esteemed caliber of its clients, including hedge fund managers, institutional investors and academic institutions. Take your career to new heights.</p>
       <div class="d-lg-none">
-        <form class="m-auto about-us-form">
+        <div class="m-auto about-us-form">
           <div class="form-group text-center lato-regular text-white">
             <label for="exampleFormControlInput1" class="">I’m interested in</label>
             <select class="form-control" id="exampleFormControlInput1">
-              <option>Choose Job Category</option>
-              <option>Category</option>
-              <option>Category</option>
-              <option>Category</option>
-              <option>Category</option>
-            </select>
-          </div>
-          <div class="form-group text-center lato-regular text-white">
-            <label for="exampleFormControlSelect1">in</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>Choose a location</option>
-              <option>Location</option>
-              <option>Location</option>
-              <option>Location</option>
-              <option>Location</option>
+              <option value="0">Choose Job Category</option>
+              <?php
+                if( $jobs->have_posts() ) :
+                  while( $jobs->have_posts() ) :
+                    $jobs->the_post();
+               ?>
+                <option value="<?php the_permalink(); ?>"><?php echo get_the_title() . ' (' . get_post_meta(get_the_ID(), 'careers_location', true) . ')'; ?></option>
+              <?php endwhile; endif; ?>
             </select>
           </div>
           <div class="form-group mb-0">
-            <button class="btn btn-warning montserrat-medium btn-block" style="height:60px;font-size:20px;">Submit</button>
+            <button class="btn btn-warning montserrat-medium btn-block" id="search-job-mobile" style="height:60px;font-size:20px;">Submit</button>
           </div>
-        </form>
+        </div>
       </div>
       <div class="d-none d-lg-block">
-        <form class="form-inline justify-content-center">
+        <div class="form-inline justify-content-center">
           <div class="form-group text-center lato-regular text-white">
             <label for="exampleFormControlInput2" class="mr-4">I’m interested in</label>
             <select class="form-control" id="exampleFormControlSelect2">
-              <option>Choose Job Category</option>
-              <option>Category</option>
-              <option>Category</option>
-              <option>Category</option>
-              <option>Category</option>
-            </select>
-          </div>
-          <div class="form-group text-center lato-regular text-white">
-            <label for="exampleFormControlSelect2" class="mx-4">in</label>
-            <select class="form-control" id="exampleFormControlSelect2">
-              <option>Choose a location</option>
-              <option>Location</option>
-              <option>Location</option>
-              <option>Location</option>
-              <option>Location</option>
+              <option value="0">Choose Job Category</option>
+              <?php
+                if( $jobs->have_posts() ) :
+                  while( $jobs->have_posts() ) :
+                    $jobs->the_post();
+               ?>
+                <option value="<?php the_permalink(); ?>"><?php echo get_the_title() . ' (' . get_post_meta(get_the_ID(), 'careers_location', true) . ')'; ?></option>
+              <?php endwhile; endif; ?>
             </select>
           </div>
           <div class="form-group mb-0">
-            <button class="btn btn-warning montserrat-medium btn-block ml-4" style="height:38px;font-size:16px;">Submit</button>
+            <button class="btn btn-warning montserrat-medium btn-block ml-4" style="height:38px;font-size:16px;" id="search-job-desktop">Submit</button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
 <div class="container text-center text-md-left p-5 pl-lg-5">
   <div class="row">
-    <div class="col-md-4 offset-md-2 mb-5 pr-md-4">
-      <img class="img-fluid w-100" src="<?php gtdu('/assets/Image_BusinessAnalyst.png'); ?>" alt="Business" />
-      <p class="section-title montserrat-medium text-blue mt-2 mb-0 h4">Business Analyst</p>
-      <button class="btn btn-link montserrat-medium text-blue pl-md-0 o-50">
-        SEE POSITIONS
+    <?php
+      $positions = new WP_Query( array(
+        'category_name'     => 'careers',
+        'showposts'         => 2,
+        'orderby'           => 'rand'
+      ));
+      if( $positions->have_posts() ) :
+        $i = 0;
+        while( $positions->have_posts() ) :
+          $positions->the_post();
+    ?>
+    <div class="col-md-4 <?php echo $i == 0 ? 'offset-md-2 mb-5 pr-md-4' : 'pl-md-4'; ?>">
+      <?php echo get_the_post_thumbnail( get_the_ID(), '', array( 'class' => 'attachment-full img-fluid w-100' ) ); ?>
+      <p class="section-title montserrat-medium text-blue mt-2 mb-0 h4"><?php the_title(); ?></p>
+      <a href="<?php the_permalink(); ?>" class="btn btn-link montserrat-medium text-blue pl-md-0 o-50">
+        SEE POSITION
         <span class="fa fa-angle-double-right"></span>
-      </button>
+      </a>
     </div>
-    <div class="col-md-4 pl-md-4">
-      <img class="img-fluid w-100" src="<?php gtdu('/assets/Image_SeniorSoftwareDeveloper.png'); ?>" alt="Developer" />
+    <?php $i++; endwhile; endif; ?>
+    <!-- <div class="col-md-4 pl-md-4">
+      <img class="img-fluid w-100" src="<?php //gtdu('/assets/Image_SeniorSoftwareDeveloper.png'); ?>" alt="Developer" />
       <p class="section-title montserrat-medium text-blue mt-2 mb-0 h4">Senior Software Developer</p>
       <button class="btn btn-link montserrat-medium text-blue pl-md-0 o-50">
         SEE POSITIONS
         <span class="fa fa-angle-double-right"></span>
       </button>
-    </div>
+    </div> -->
   </div>
 </div>
+
+<script>
+  jQuery(document).ready(function($) {
+    $('#search-job-mobile').on('click', function() {
+      if ($('#exampleFormControlInput1').val() !== '0') {
+        window.location.href = $('#exampleFormControlInput1').val();
+      }
+    })
+    $('#search-job-desktop').on('click', function() {
+      if ($('#exampleFormControlSelect2').val() !== '0') {
+        window.location.href = $('#exampleFormControlSelect2').val();
+      }
+    })
+  })
+</script>

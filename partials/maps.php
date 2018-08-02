@@ -18,7 +18,7 @@
         <nav>
           <div class="nav nav-tabs justify-content-between" id="nav-tab-country" role="tablist" style="border:none!important;margin-bottom:30px;">
             <a 
-            class="nav-item nav-link active nav-item-country" 
+            class="nav-item nav-link active nav-item-country US-button" 
             id="nav-tab-country-us" 
             data-toggle="tab" 
             data-country="us" 
@@ -27,10 +27,13 @@
             aria-controls="nav-us" 
             aria-selected="true">
           US</a>
-            <a class="nav-item nav-link nav-item-country" id="nav-tab-country-canada" data-toggle="tab" data-country="canada" href="#nav-canada" role="tab" aria-controls="nav-canada" aria-selected="false">Canada</a>
-            <a class="nav-item nav-link nav-item-country" id="nav-tab-country-europe" data-toggle="tab" data-country="europe" href="#nav-europe" role="tab" aria-controls="nav-europe" aria-selected="true">Europe</a>
-            <a class="nav-item nav-link nav-item-country" id="nav-tab-country-asia" data-toggle="tab" data-country="asia" href="#nav-asia" role="tab" aria-controls="nav-asia" aria-selected="false">Asia</a>
-            <a class="nav-item nav-link nav-item-country" id="nav-tab-country-global" data-toggle="tab" data-country="global" href="#nav-global" role="tab" aria-controls="nav-global" aria-selected="false">Global</a>
+            <a class="nav-item nav-link nav-item-country US-button" id="nav-tab-country-canada" data-toggle="tab" data-country="canada" href="#nav-canada" role="tab" aria-controls="nav-canada" aria-selected="false">Canada</a>
+
+            <a class="nav-item nav-link nav-item-country US-button" id="nav-tab-country-europe" data-toggle="tab" data-country="europe" href="#nav-europe" role="tab" aria-controls="nav-europe" aria-selected="true">Europe</a>
+
+            <a class="nav-item nav-link nav-item-country US-button" id="nav-tab-country-asia" data-toggle="tab" data-country="asia" href="#nav-asia" role="tab" aria-controls="nav-asia" aria-selected="false">Asia</a>
+
+            <a class="nav-item nav-link nav-item-country US-button" id="nav-tab-country-global" data-toggle="tab" data-country="global" href="#nav-global" role="tab" aria-controls="nav-global" aria-selected="false">Global</a>
           </div>
         </nav>
         <div class="tab-content" id="nav-tab-countryContent">

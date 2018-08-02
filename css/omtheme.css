@@ -475,31 +475,31 @@ table.dataTable tbody tr {
 
 .card {
   border: none !important; }
-  .card #collapseOne, .card #headingOne {
+  .card .orange1, .card .orange1 {
     border-left: 3px solid #d6875a;
     background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #collapseTwo, .card #headingTwo {
+  .card .green2, .card .green2 {
     border-left: 3px solid #abc054;
     background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #collapseThree, .card #headingThree {
+  .card .ping3, .card .ping3 {
     border-left: 3px solid #e28890;
     background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #collapseFour, .card #headingFour {
+  .card .blue4, .card .blue4 {
     border-left: 3px solid #6abcc2;
     background: #f7f7f7; }
 
 .card {
   border: none !important; }
-  .card #collapseFive, .card #headingFive {
+  .card .purple5, .card .purple5 {
     border-left: 3px solid #8e81f6;
     background: #f7f7f7; }
 

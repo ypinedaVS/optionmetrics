@@ -355,6 +355,11 @@ table.dataTable tbody tr {
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-transform: uppercase; }
+    @media (min-width: 992px) {
+      .navbar .navbar-nav li a {
+        font-weight: normal; } }
+  .navbar .navbar-nav li.current_page_item a {
+    opacity: 0.5; }
 
 .partner-img {
   transition: all 0.5s ease-out;

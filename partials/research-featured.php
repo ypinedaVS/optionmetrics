@@ -11,7 +11,7 @@
       $ft_post->the_post();
 ?>
   <p class="text-blue h5 montserrat-medium px-xl-5"><?php the_title(); ?></p>
-  <p class="text-grey lato-regular" style="font-style:italic"><?php echo get_the_date( 'F jS, Y' ); ?></p>
+  <p class="text-grey lato-regular text-center" style="font-style:italic"><?php echo get_the_date( 'F jS, Y' ); ?></p>
   <p id="research-top" class="_content _content-research text-center lato-regular h6"><?php echo get_the_content(); ?></p>
   <a class="btn btn-link text-blue-dark montserrat-medium mx-auto mb-5" href="<?php the_permalink(); ?>">
     READ MORE

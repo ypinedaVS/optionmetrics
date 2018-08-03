@@ -106,7 +106,7 @@
     </div>
   </div>
 </div>
-<div class="container mb-5">
+<div class="container mb-5" id="leaderships">
   <div class="row" style="padding: 0px 15px;">
     <div class="col-12">
       <p class="section-title montserrat-regular text-center mb-5 mt-5">Leaderships</p>

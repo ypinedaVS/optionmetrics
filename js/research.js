@@ -17,11 +17,39 @@ jQuery(document).ready(function($) {
     $('html, body').stop().animate({ scrollTop: top }, 1000)
   }
 
-  if (getQueryVariable('d') != false) {
+  if (getQueryVariable('c') != false) {
     const top = $(window).innerWidth() < 768
-      ? $('#form-careers').offset().top + 300
-      : $('#form-careers').offset().top
+      ? $('#form-careers').offset().top + 400
+      : $('#form-careers').offset().top + 200
 
+    $('html, body').stop().animate({ scrollTop: top }, 1000)
+  }
+
+  if (getQueryVariable('l') != false) {
+    const top = $(window).innerWidth() < 768
+    ? $('#leaderships').offset().top + 250
+    : $('#leaderships').offset().top - 50
+
+    $('html, body').stop().animate({ scrollTop: top }, 1000)
+  }
+
+  if (getQueryVariable('t') != false) {
+    const top = $('#data-products').offset().top - 50
+
+    $('html, body').stop().animate({ scrollTop: top }, 1000)
+    if (getQueryVariable('t') == 'optigraph') {
+      $('#nav-tab-optigraph').trigger('click')
+    }
+  }
+
+  if (getQueryVariable('e') != false) {
+    let top
+
+    if (getQueryVariable('e') == 'events') {
+      top = $('#events-offset').offset().top - 80
+    } else if (getQueryVariable('e') == 'news') {
+      top = $('#news-offset').offset().top - 80
+    }
     $('html, body').stop().animate({ scrollTop: top }, 1000)
   }
 

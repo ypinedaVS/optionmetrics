@@ -9,7 +9,6 @@
   if( is_page( 'privacy-policy' ) ) $tag = 'privacy-policy';
   if( is_page( 'qualification-process' ) ) $tag = 'qualification-process';
   if( is_single() ) $tag = get_the_category()[0]->slug;
-  if( is_404() ) $tag = 'not_found';
 
   $args = array(
     'category_name' => 'home-slider',
@@ -18,7 +17,7 @@
       'field'     => 'slug',
       'terms'     => $tag
     )));
-    $header = get_posts( $args ); 
+    $header = get_posts( $args );
     setup_postdata( $header[0] );
 ?>
 

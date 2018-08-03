@@ -12,11 +12,11 @@ function omtheme_script_enqueue()
   wp_enqueue_script( 'affix', get_template_directory_uri() . '/js/affix.js', array('jquery'), '0.0.1', true );
   wp_enqueue_script( 'partners', get_template_directory_uri() . '/js/partners.js', array('jquery'), '0.0.1', true );
 
-  if( is_page( 'research' ) ) {
+  // if( is_page( 'research' ) ) {
     wp_register_script( 'research_script', get_template_directory_uri() . '/js/research.js', array('jquery'), '0.0.1', true );
     wp_enqueue_script( 'research_script' );
     wp_localize_script( 'research_script', 'research_vars', [ 'ajaxurl' => admin_url('admin-ajax.php') ] );
-  }
+  // }
 }
 add_action( 'wp_enqueue_scripts', 'omtheme_script_enqueue' );
 

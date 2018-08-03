@@ -13,7 +13,15 @@ jQuery(document).ready(function($) {
 
   if (getQueryVariable('query_year') != false) {
     const top = $('#research-top').offset().top
-    
+
+    $('html, body').stop().animate({ scrollTop: top }, 1000)
+  }
+
+  if (getQueryVariable('d') != false) {
+    const top = $(window).innerWidth() < 768
+      ? $('#form-careers').offset().top + 300
+      : $('#form-careers').offset().top
+
     $('html, body').stop().animate({ scrollTop: top }, 1000)
   }
 

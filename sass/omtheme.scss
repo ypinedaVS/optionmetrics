@@ -92,6 +92,7 @@
 
 // =================================
 
+
 .section-text {
   color: $grey;
   font-size: 15px;
@@ -479,9 +480,14 @@ table {
         padding-top: 1rem;
         padding-bottom: 1rem;
         text-transform: uppercase;
+        @media (min-width: 992px) {
+          font-weight: normal;
+        }
       }
-      &:first-child {
-        // padding-top: 1.5rem;
+      &.current_page_item {
+        a {
+          opacity: 0.5;
+        }
       }
     }
   }

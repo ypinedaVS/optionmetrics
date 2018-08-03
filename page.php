@@ -9,7 +9,7 @@
   <!-- Data Products page -->
   <?php if( is_page( 'data-products') ) : ?>
   <div class="container">
-    <div class="position-relative page-wrapper-up py-3 p-lg-5">
+    <div class="position-relative page-wrapper-up py-3 p-lg-5" id="data-products">
       <div class="row d-md-none">
         <div class="col-12 text-center">
           <p class="section-title text-blue montserrat-regular">Data Analysis Products</p>
@@ -889,7 +889,7 @@
   <div class="container">
     <div class="position-relative page-wrapper-up pt-5">
       <div class="row">
-        <div class="col-12 px-5">
+        <div class="col-12 px-5" id="events-offset">
           <?php get_template_part( 'partials/news', 'featured-page' ); ?>
         </div>
         <?php get_template_part( 'partials/news', 'events-pagination' ); ?>
@@ -971,7 +971,7 @@
       <div class="row">
         <div class="col-12 p-4 text-center">
           <p class="section-title text-blue d-md-none">Research</p>
-          <p class="text-blue o-50 lato-regular h6 mx-auto" style="max-width:880px;">OptionMetrics data is an essential component of many studies performed by both academics and practitioners. Below is a partial list of academic papers that used OptionMetrics data:</p>
+          <p class="text-blue o-50 lato-regular h6 mx-auto px-md-5 pt-md-4" style="max-width:880px;">OptionMetrics data is an essential component of many studies performed by both academics and practitioners. Below is a partial list of academic papers that used OptionMetrics data:</p>
         </div>
         <div class="col-12 px-4 pb-5 text-center hide-show-more d-md-none">
           <?php get_template_part( 'partials/research', 'mobile' ); ?>

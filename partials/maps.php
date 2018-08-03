@@ -17,14 +17,14 @@
       <div class="tab-pane fade show active" id="nav-ivydb" role="tabpanel" aria-labelledby="nav-ivydb-tab">
         <nav>
           <div class="nav nav-tabs justify-content-between" id="nav-tab-country" role="tablist" style="border:none!important;margin-bottom:30px;">
-            <a 
-            class="nav-item nav-link active nav-item-country US-button" 
-            id="nav-tab-country-us" 
-            data-toggle="tab" 
-            data-country="us" 
-            href="#nav-us" 
-            role="tab" 
-            aria-controls="nav-us" 
+            <a
+            class="nav-item nav-link active nav-item-country US-button"
+            id="nav-tab-country-us"
+            data-toggle="tab"
+            data-country="us"
+            href="#nav-us"
+            role="tab"
+            aria-controls="nav-us"
             aria-selected="true">
           US</a>
             <a class="nav-item nav-link nav-item-country US-button" id="nav-tab-country-canada" data-toggle="tab" data-country="canada" href="#nav-canada" role="tab" aria-controls="nav-canada" aria-selected="false">Canada</a>
@@ -61,11 +61,13 @@
         OptiGraph is powered by IvyDB, the high-quality historical option price and implied volatility database from OptionMetrics.</p>
       </div>
     </div>
+    <?php if( !is_page( 'data-products' ) ) : ?>
     <div class="text-center text-md-left">
-      <button class="btn btn-link text-uppercase pl-md-0 text-blue mt-4 mb-5 montserrat-medium">
+      <a href="/data-products/" class="btn btn-link text-uppercase pl-md-0 text-blue mt-4 mb-5 montserrat-medium">
         learn more
         <span class="fa fa-angle-double-right"></span>
-      </button>
+      </a>
     </div>
+  <?php endif; ?>
   </div>
 </div>

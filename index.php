@@ -18,6 +18,16 @@
         <?php get_template_part( 'partials/features', 'home' ); ?>
       </div>
     </div>
+
+    <!-- Carousel -->
+    <div class="row justify-content-center my-5 py-5">
+      <div class="col-sm-12">
+        <p class="section-title montserrat-regular text-center mb-4">Some of our Clients</p>
+      </div>
+      <?php echo do_shortcode( '[jssor-slider alias="carousel-slider.slider"]' )?>
+    </div>
+
+    <!-- News & Events -->
     <div class="row">
       <div class="col-12">
         <div class="container bg-light-custom news-wrapper pb-0">

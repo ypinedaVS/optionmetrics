@@ -681,7 +681,7 @@
                 </a>
               </div>
 
-              <div id="collapse19 class="collapse blue4" aria-labelledby="heading19" data-parent="#accordion4">
+              <div id="collapse19" class="collapse blue4" aria-labelledby="heading19" data-parent="#accordion4">
                 <div class="card-body align-t">
                   IvyDB Asia is updated daily to incorporate new end-of-day prices in all the equity and option exchanges we follow. A daily patch file is also provided which contains corrections to previous prices or calculations when needed. Your IvyDB database is always current and ready to use.
                 </div>

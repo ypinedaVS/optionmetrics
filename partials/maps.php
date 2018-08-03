@@ -61,11 +61,5 @@
         OptiGraph is powered by IvyDB, the high-quality historical option price and implied volatility database from OptionMetrics.</p>
       </div>
     </div>
-    <div class="text-center text-md-left">
-      <button class="btn btn-link text-uppercase pl-md-0 text-blue mt-4 mb-5 montserrat-medium">
-        learn more
-        <span class="fa fa-angle-double-right"></span>
-      </button>
-    </div>
   </div>
 </div>

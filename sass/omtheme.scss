@@ -666,35 +666,36 @@ table {
 }
 .card {
   border: none !important;
-  #collapseOne, #headingOne {
+  .orange1, .orange1 {
     border-left: 3px solid $orange;
     background: #f7f7f7;
   }
 }
 .card{
   border: none !important;
-  #collapseTwo, #headingTwo {
+  .green2, .green2 {
     border-left: 3px solid $green;
     background: #f7f7f7;
   }
 }
+
 .card{
   border: none !important;
-  #collapseThree, #headingThree {
+  .ping3, .ping3 {
     border-left: 3px solid $ping;
     background: #f7f7f7;
   }
 }
 .card{
   border: none !important;
-  #collapseFour , #headingFour {
+  .blue4 , .blue4 {
     border-left: 3px solid $blue-i;
     background: #f7f7f7;
   }
 }
 .card{
   border: none !important;
-  #collapseFive , #headingFive {
+  .purple5 , .purple5 {
     border-left: 3px solid $purple;
     background: #f7f7f7;
   }

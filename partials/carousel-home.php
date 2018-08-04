@@ -32,9 +32,11 @@
     <?php endfor; ?>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="fa fa-angle-left fa-3x"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="fa fa-angle-right fa-3x"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>

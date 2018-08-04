@@ -1,13 +1,13 @@
 <?php
-  $featured = get_term_by( 'name', 'featured', 'post_tag' );
+  // $featured = get_term_by( 'name', 'featured', 'post_tag' );
   $news = get_term_by( 'name', 'news', 'post_tag' );
-  $events = get_term_by( 'name', 'events', 'post_tag' );
+  // $events = get_term_by( 'name', 'events', 'post_tag' );
 
   $args = array(
     'category_name'   => 'news-events',
     'orderby'         => 'date',
     'order'           => 'DESC',
-    'tag__not_in'     => array( $featured->term_id, $events->term_id )
+    'tag__in'         => array( $news->term_id )
   );
   $newsPosts = new WP_Query( $args );
 ?>
@@ -16,9 +16,6 @@
     <div class="col-12 text-center">
       <p class="section-title text-blue montserrat-medium">News</p>
     </div>
-    <!-- <div class="col-12 position-absolute d-none d-lg-inline" style="z-index:1;padding-top:20px;padding-left:30px">
-      <p class="section-title text-blue montserrat-medium position-relative d-inline">News</p>
-    </div> -->
     <div class="col-12">
       <table id="news">
         <thead><tr><th></th></tr></thead>

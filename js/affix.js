@@ -23,26 +23,7 @@ jQuery(document).ready(function($) {
 
   $(window).on('load resize', function(e) {
     const widthClient = $(this).innerWidth()
-    const first = $('ul.navbar-nav > li:first')
-    const last = $('ul.navbar-nav > li:last')
-    const searchIcon = '<span id="search-icon" class="fa fa-search"></span>'
-    const search = first.children().text().toLowerCase()
 
-    if (widthClient >= 992) {
-      if (search === 'search' || search === searchIcon) {
-        first.parent().append(first)
-        if (search === 'search') {
-          first.children().html(searchIcon)
-        }
-      }
-    } else {
-      if (search !== 'search') {
-        if (search !== searchIcon) {
-          last.parent().prepend(last)
-          last.children().html('search')
-        }
-      }
-    }
     if (widthClient >= 768) {
       $('#nav-tab').removeClass('justify-content-center')
     } else {

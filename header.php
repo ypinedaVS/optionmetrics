@@ -8,7 +8,7 @@
   </head>
   <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" data-spy="affix" data-offset-top="50">
-      <div class="container">
+      <div class="container px-lg-0">
         <a class="navbar-brand js-scroll-trigger" href="<?php echo get_home_url(); ?>">
           <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/logo_final/logo_optionmetrics_header.PNG" alt="optionmetrics logo" id="header-logo" />
           <img class="logo_toggle" src="<?php echo get_template_directory_uri(); ?>/assets/logo_final/logo_white_back.png" alt="optionmetrics logo" id="header-logo" />
@@ -24,5 +24,15 @@
           'container_id'     => 'navbarResponsive',
           'items_wrap'       => '<ul class="navbar-nav ml-auto">%3$s</ul>'
         )); ?>
+        <script>
+          jQuery(document).ready(function($) {
+            $('ul.navbar-nav > li:first')
+              .children()
+              .append('<span id="search-icon" class="fa fa-search position-fixed" style="right:15px"></span>')
+            $('ul.navbar-nav > li:last')
+              .children()
+              .html('<span class="fa fa-search"></span>')
+          })
+        </script>
       </div>
     </nav>

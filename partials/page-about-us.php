@@ -1,12 +1,12 @@
 <div class="container">
   <div class="position-relative page-wrapper-up">
-    <div class="row" style="padding: 0px 15px;">
-      <div class="col-md-6 col-lg-4 pt-4 px-4 pb-0 pr-md-2 pt-md-5">
+    <div class="row">
+      <div class="pt-4 pb-0 col-md-6 pr-md-2 pl-md-5 pt-md-5 col-lg-4">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center pr-md-0">
             <img src="<?php gtdu('/assets/Common_language_icon.png'); ?>" alt="Common Language" class="img-fluid w-md-100 pb-4" />
           </div>
-          <div class="col-md-9 text-center text-md-left">
+          <div class="col-md-9 text-center text-md-left pl-md-0">
             <div class="row">
               <div class="col-12">
                 <p class="text-blue p montserrat-medium mb-4">We use a common language all practitioners understand</p>
@@ -18,12 +18,12 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 pt-4 px-4 pb-0 pl-md-2 pr-lg-2 pt-md-5">
+      <div class="pt-4 pb-0 col-md-6 pr-md-5 pl-md-2 pt-md-5 col-lg-4 pr-lg-2">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center pr-md-0">
             <img src="<?php gtdu('/assets/Replicate_icon.png'); ?>" alt="Replicate" class="img-fluid w-md-100 pb-4" />
           </div>
-          <div class="col-md-9 text-center text-md-left">
+          <div class="col-md-9 text-center text-md-left pl-md-0">
             <div class="row">
               <div class="col-12">
                 <p class="text-blue p montserrat-medium mb-4">Replicate and extend studies with full confidence.</p>
@@ -35,12 +35,12 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 pt-4 px-4 pb-0 pl-lg-2 pr-md-2 pr-lg-4 pt-md-5">
+      <div class="pt-4 pb-0 col-md-6 pr-md-2 pl-md-5 pt-md-5 col-lg-4 pl-lg-2 pr-lg-5">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center pr-md-0">
             <img src="<?php gtdu('/assets/InControl_icon.png'); ?>" alt="In Control" class="img-fluid w-md-100 pb-4" />
           </div>
-          <div class="col-md-9 text-center text-md-left">
+          <div class="col-md-9 text-center text-md-left pl-md-0">
             <div class="row">
               <div class="col-12">
                 <p class="text-blue p montserrat-medium mb-4">You are in control.</p>
@@ -52,12 +52,12 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 pt-4 px-4 pb-0 pl-md-2 pl-lg-4 pr-lg-2 pt-md-5">
+      <div class="pt-4 pb-0 col-md-6 pr-md-5 pl-md-2 pt-md-5 col-lg-4 pl-lg-5 pr-lg-2">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center pr-md-0">
             <img src="<?php gtdu('/assets/Methodology_icon.png'); ?>" alt="Methodology" class="img-fluid w-md-100 pb-4" />
           </div>
-          <div class="col-md-9 text-center text-md-left">
+          <div class="col-md-9 text-center text-md-left pl-md-0">
             <div class="row">
               <div class="col-12">
                 <p class="text-blue p montserrat-medium mb-4">Completely transparent methodology.</p>
@@ -69,12 +69,12 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4  pt-4 px-4 pb-0 pr-md-2 pl-lg-2 pr-lg-2 pt-md-5">
+      <div class="pt-4 pb-0 col-md-6 pl-md-5 pr-md-2 pt-md-5 col-lg-4 pl-lg-2 pr-lg-2">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center pr-md-0">
             <img src="<?php gtdu('/assets/OurData_icon.png'); ?>" alt="Our Data" class="img-fluid w-md-100 pb-4" />
           </div>
-          <div class="col-md-9 text-center text-md-left">
+          <div class="col-md-9 text-center text-md-left pl-md-0">
             <div class="row">
               <div class="col-12">
                 <p class="text-blue p montserrat-medium mb-4">Our data is independent and completely based on traded instruments and exchange data.</p>
@@ -86,12 +86,12 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-4 pt-4 px-4 pb-0 pl-md-2 pt-md-5">
+      <div class="pt-4 pb-0 col-md-6 pl-md-2 pr-md-5 pt-md-5 col-lg-4 pl-lg-2">
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-3 text-center pr-md-0">
             <img src="<?php gtdu('/assets/Host_icon.png'); ?>" alt="Host" class="img-fluid w-md-100 pb-4" />
           </div>
-          <div class="col-md-9 text-center text-md-left">
+          <div class="col-md-9 text-center text-md-left pl-md-0">
             <div class="row">
               <div class="col-12">
                 <p class="text-blue p montserrat-medium mb-4">Host and access data to suit your needs.</p>
@@ -107,7 +107,7 @@
   </div>
 </div>
 <div class="container mb-5" id="leaderships">
-  <div class="row" style="padding: 0px 15px;">
+  <div class="row px-lg-5 mx-lg-5">
     <div class="col-12">
       <p class="section-title montserrat-regular text-center mb-5 mt-5">Leaderships</p>
     </div>
@@ -148,11 +148,11 @@
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselPartners" role="button" data-slide="prev">
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <span class="fa fa-angle-left fa-3x text-grey position-absolute" style="top:20px;" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselPartners" role="button" data-slide="next">
-          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <span class="fa fa-angle-right fa-3x text-grey position-absolute" style="top:20px;" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -166,7 +166,7 @@
     <div class="col-lg-4 d-none d-lg-inline-block text-center">
       <img src="<?php gtdu('/assets/photo_robert_on.png'); ?>" alt="Robert" class="img-fluid partner-img robert" />
     </div>
-    <div class="col-12 d-none d-lg-inline-block partner eran px-5">
+    <div class="col-12 d-none d-lg-inline-block partner eran px-xl-0">
       <div class="arrow-up mt-70 ml-13-5"></div>
       <div class="partner-wrapper">
         <p class="text-blue montserrat-medium h5 pl-5">Eran Steinberg</p>
@@ -174,7 +174,7 @@
         <p class="text-grey montserrat-light px-5">Eran is a seasoned sales executive with close to 20 years of financial industry experience. Prior to joining OptionMetrics, Eran spent 13 years at Capital IQ, a leading global provider of public and private capital market data applications, helping it grow from its earliest days through and beyond its eventual acquisition by Standard & Poor’s (now S&P Global), finishing as Head of Account Management for all of the Americas. Prior to S&P Eran spent close to a decade working in for profit education for Kaplan Test Prep and then briefly for ALFY, a start-up focused on designing a subscription-based educational gaming site for young children. Eran received a Bachelor of Science in Management from Binghamton University (SUNY), and a J.D. from the Benjamin N. Cardozo School of Law (Yeshiva University).</p>
       </div>
     </div>
-    <div class="col-12 d-none partner david px-5">
+    <div class="col-12 d-none partner david px-xl-0">
       <div class="arrow-up mt-70 mx-auto"></div>
       <div class="partner-wrapper">
         <p class="text-blue montserrat-medium h5 pl-5">David J. Hait, Ph.D.</p>
@@ -182,7 +182,7 @@
         <p class="text-grey montserrat-light px-5">David J. Hait, Ph.D. is the President of OptionMetrics, LLC, which he founded in 1999. Dr. Hait is a financial economist with over 20 years of experience in applied quantitative derivative research and technology. Prior to founding OptionMetrics he served as Vice President in the Fixed Income Research Group at Paine Webber, and taught courses on derivatives at J. P. Morgan. Dr. Hait received his Ph.D. in Finance from New York University’s Stern School of Business, where he was an Adjunct Professor at the Stern School of Business and Courant Institute of Mathematics. Dr. Hait also received an MS in Computer Science from University of California at Berkeley and a BSE in Computer Engineering from the University of Pennsylvania.</p>
       </div>
     </div>
-    <div class="col-12 d-none partner robert px-5">
+    <div class="col-12 d-none partner robert px-xl-0">
       <div class="arrow-up mt-70 mr-13-5"></div>
       <div class="partner-wrapper">
         <p class="text-blue montserrat-medium h5 pl-5">Robert Siverson</p>
@@ -193,15 +193,16 @@
   </div>
 </div>
 <?php $jobs = new WP_Query( array( 'category_name' => 'careers' ) ); ?>
-<div id="form-careers" class="row m-0 p-5" style="background-image:url(<?php gtdu('/assets/partners-form-bg.png'); ?>);background-size:cover">
-  <div class="container p-0">
-    <div class="col-12 text-center p-0">
+<div id="form-careers" class="row m-0 py-5" style="background-image:url(<?php gtdu('/assets/partners-form-bg.png'); ?>);background-size:cover">
+  <div class="container">
+    <div class="row px-lg-5 mx-lg-5">
+      <div class="col-12 text-center">
       <p class="section-title text-white montserrat-regular h4 mb-4">Be part of an exceptionally creative and intelligent team</p>
       <p class="text-white lato-regular mb-4">OptionMetrics is hiring. Be part  of developers, quants and econometrics specialists collaborating on proprietary next-gen data and analytic products. We encourage true ownership over projects and reward innovation. Join the company distinguished by its passion for volatility, data and analytic excellence and the esteemed caliber of its clients, including hedge fund managers, institutional investors and academic institutions. Take your career to new heights.</p>
       <div class="d-lg-none">
         <div class="m-auto about-us-form">
           <div class="form-group text-center lato-regular text-white">
-            <label for="exampleFormControlInput1" class="">I’m interested in</label>
+            <label for="exampleFormControlInput1">I’m interested in</label>
             <select class="form-control" id="exampleFormControlInput1">
               <option value="0">Choose Job Category</option>
               <?php
@@ -214,11 +215,11 @@
             </select>
           </div>
           <div class="form-group mb-0">
-            <button class="btn btn-warning montserrat-medium btn-block" id="search-job-mobile" style="height:60px;font-size:20px;">Submit</button>
+            <button class="btn btn-warning montserrat-medium btn-block" id="search-job-mobile">Submit</button>
           </div>
         </div>
       </div>
-      <div class="d-none d-lg-block">
+      <div class="d-none d-lg-block mt-lg-5">
         <div class="form-inline justify-content-center">
           <div class="form-group text-center lato-regular text-white">
             <label for="exampleFormControlInput2" class="mr-4">I’m interested in</label>
@@ -238,6 +239,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </div>

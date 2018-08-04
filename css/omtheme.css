@@ -364,7 +364,6 @@ table.dataTable tbody tr {
 
 .page-wrapper-up {
   background-color: #ffffff;
-  width: 90%;
   margin: auto; }
   @media (min-width: 768px) {
     .page-wrapper-up {

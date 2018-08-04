@@ -1,9 +1,7 @@
 <?php get_template_part( 'partials/page', 'hero' ); ?>
 
   <!-- About page -->
-  <?php if( is_page( 'about-us') ) :
-    get_template_part( 'partials/page', 'about-us' );
-  endif; ?>
+  <?php if( is_page( 'about-us') ) get_template_part( 'partials/page', 'about-us' ); ?>
   <!-- /About page -->
 
   <!-- Data Products page -->

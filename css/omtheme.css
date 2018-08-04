@@ -287,6 +287,19 @@ table.dataTable tbody tr {
 .partners-indicators {
   top: 310px;
   bottom: auto !important; }
+  @media (min-width: 768px) {
+    .partners-indicators.jobs-indicators {
+      top: 340px; } }
+  @media (min-width: 992px) {
+    .partners-indicators.jobs-indicators {
+      top: 470px; } }
+
+.text-jobs-indicators {
+  opacity: 1 !important;
+  color: #ffffff; }
+  @media (min-width: 768px) {
+    .text-jobs-indicators {
+      color: #363636 !important; } }
 
 .masthead {
   height: 100vh;

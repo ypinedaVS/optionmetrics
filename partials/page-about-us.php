@@ -112,7 +112,7 @@
       <p class="section-title montserrat-regular text-center mb-5 mt-5">Leaderships</p>
     </div>
     <div class="col-12 d-lg-none">
-      <div id="carouselPartners" class="carousel slide" data-ride="carousel" data-interval="800000">
+      <div id="carouselPartners" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators blue partners-indicators">
           <li data-target="#carouselPartners" data-slide-to="0" class="active"></li>
           <li data-target="#carouselPartners" data-slide-to="1"></li>
@@ -148,11 +148,11 @@
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselPartners" role="button" data-slide="prev">
-          <span class="fa fa-angle-left fa-3x text-grey position-absolute" style="top:20px;" aria-hidden="true"></span>
+          <span class="fa fa-angle-left fa-3x text-grey position-absolute" style="top:50px;" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselPartners" role="button" data-slide="next">
-          <span class="fa fa-angle-right fa-3x text-grey position-absolute" style="top:20px;" aria-hidden="true"></span>
+          <span class="fa fa-angle-right fa-3x text-grey position-absolute" style="top:50px;" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -192,7 +192,6 @@
     </div>
   </div>
 </div>
-<?php $jobs = new WP_Query( array( 'category_name' => 'careers' ) ); ?>
 <div id="form-careers" class="row m-0 py-5" style="background-image:url(<?php gtdu('/assets/partners-form-bg.png'); ?>);background-size:cover">
   <div class="container">
     <div class="row px-lg-5 mx-lg-5">
@@ -206,6 +205,7 @@
             <select class="form-control" id="exampleFormControlInput1">
               <option value="0">Choose Job Category</option>
               <?php
+                $jobs = new WP_Query( array( 'category_name' => 'careers' ) );
                 if( $jobs->have_posts() ) :
                   while( $jobs->have_posts() ) :
                     $jobs->the_post();
@@ -243,36 +243,47 @@
     </div>
   </div>
 </div>
-<div class="container text-center text-md-left p-5 pl-lg-5">
-  <div class="row">
-    <?php
-      $positions = new WP_Query( array(
-        'category_name'     => 'careers',
-        'showposts'         => 2,
-        'orderby'           => 'rand'
-      ));
-      if( $positions->have_posts() ) :
+<div class="container text-center pl-lg-5 pb-5">
+  <div class="col-12 p-0 py-5">
+    <div id="carouselJobs" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators blue partners-indicators jobs-indicators">
+      <?php
         $i = 0;
-        while( $positions->have_posts() ) :
-          $positions->the_post();
-    ?>
-    <div class="col-md-4 <?php echo $i == 0 ? 'offset-md-2 mb-5 pr-md-4' : 'pl-md-4'; ?>">
-      <?php echo get_the_post_thumbnail( get_the_ID(), '', array( 'class' => 'attachment-full img-fluid w-100' ) ); ?>
-      <p class="section-title montserrat-medium text-blue mt-2 mb-0 h4"><?php the_title(); ?></p>
-      <a href="<?php the_permalink(); ?>" class="btn btn-link montserrat-medium text-blue pl-md-0 o-50">
-        SEE POSITION
-        <span class="fa fa-angle-double-right"></span>
+        if( $jobs->have_posts() ) :
+          while( $jobs->have_posts() ) :
+            $jobs->the_post();
+      ?>
+        <li data-target="#carouselJobs" data-slide-to="<?php echo $i; ?>" <?php echo $i == 0 ? 'class="active"' : ''; ?> style="margin-left:5px!important;margin-right:5px!important;"></li>
+      <?php $i++; endwhile; endif; ?>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <?php
+          $i = 0;
+          if( $jobs->have_posts() ) :
+            while( $jobs->have_posts() ) :
+              $jobs->the_post();
+        ?>
+          <div class="carousel-item <?php echo $i == 0 ? 'active' : ''; ?>">
+            <div class="col-md-6 offset-md-3">
+              <?php echo get_the_post_thumbnail( get_the_ID(), '', array( 'class' => 'attachment-full img-fluid w-100' ) ); ?>
+              <p class="montserrat-medium text-blue mt-2 mb-0"><?php the_title(); ?></p>
+              <a href="<?php the_permalink(); ?>" class="btn btn-link montserrat-medium text-blue pl-md-0 o-50">
+                SEE POSITION
+                <span class="fa fa-angle-double-right"></span>
+              </a>
+            </div>
+          </div>
+        <?php $i++; endwhile; endif; ?>
+      </div>
+      <a class="carousel-control-prev text-jobs-indicators" href="#carouselJobs" role="button" data-slide="prev">
+        <span class="fa fa-angle-left fa-3x position-absolute" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next text-jobs-indicators" href="#carouselJobs" role="button" data-slide="next">
+        <span class="fa fa-angle-right fa-3x position-absolute" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
       </a>
     </div>
-    <?php $i++; endwhile; endif; ?>
-    <!-- <div class="col-md-4 pl-md-4">
-      <img class="img-fluid w-100" src="<?php //gtdu('/assets/Image_SeniorSoftwareDeveloper.png'); ?>" alt="Developer" />
-      <p class="section-title montserrat-medium text-blue mt-2 mb-0 h4">Senior Software Developer</p>
-      <button class="btn btn-link montserrat-medium text-blue pl-md-0 o-50">
-        SEE POSITIONS
-        <span class="fa fa-angle-double-right"></span>
-      </button>
-    </div> -->
   </div>
 </div>
 

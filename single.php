@@ -8,7 +8,7 @@
   <div class="position-relative page-wrapper-up <?php if( $cat == 'careers' ) echo 'page-wrapper-up-careers'; ?>">
     <div class="row">
       <div class="col-12 p-4 p-md-5">
-        <?php $redirect = $cat == 'careers' ? 'about-us?d=true' : $cat . '/'; ?>
+        <?php $redirect = $cat == 'careers' ? 'about-us?c=true' : $cat . '/'; ?>
         <a href="<?php echo get_home_url() . '/' . $redirect; ?>" class="btn btn-link text-left text-grey-light pl-lg-5">
           <span class="fa fa-long-arrow-left"></span>
           Back

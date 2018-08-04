@@ -391,6 +391,21 @@ table {
 .partners-indicators {
   top: 310px;
   bottom: auto !important;
+  &.jobs-indicators {
+    @media (min-width: 768px) {
+      top: 340px;
+    }
+    @media (min-width: 992px) {
+      top: 470px;
+    }
+  }
+}
+.text-jobs-indicators {
+  opacity: 1 !important;
+  color: $white;
+  @media (min-width: 768px) {
+    color: $grey !important;
+  }
 }
 
 .masthead {

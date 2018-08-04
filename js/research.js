@@ -19,8 +19,8 @@ jQuery(document).ready(function($) {
 
   if (getQueryVariable('c') != false) {
     const top = $(window).innerWidth() < 768
-      ? $('#form-careers').offset().top + 400
-      : $('#form-careers').offset().top + 200
+      ? $('#form-careers').offset().top + 300
+      : $('#form-careers').offset().top + 70
 
     $('html, body').stop().animate({ scrollTop: top }, 1000)
   }

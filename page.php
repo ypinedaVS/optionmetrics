@@ -18,7 +18,7 @@
     <div class="position-relative page-wrapper-up pt-5">
       <div class="row">
         <div class="container-form col-lg-6 col-md-6 col-sm-12">
-          <div class="form-cont">
+          <div class="form-cont px-md-5">
             <p class="page-feature-text">
               Please complete the form below detailing your request and a member of our support staff will respond  as soon as possible.
             </p>
@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="container-info col-lg-6 col-md-6 col-sm-12">
-          <div class="form-cont">
+          <div class="form-cont px-md-5">
             <div class="logo-mob">
               <img class="logo_toggle" src="<?php gtdu('/assets/logo_final/logo_white_back.png'); ?>" alt="optionmetrics logo" id="header-logo" width="160px">
             </div>
@@ -82,8 +82,8 @@
 
  <!-- Privacy Policy Page-->
   <?php if( is_page( 'privacy-policy') ) : ?>
- <div class="container">
-    <?php get_template_part('privacy', 'policy-page')?>
+  <div class="container">
+    <?php get_template_part( 'privacy', 'policy-page '); ?>
   </div>
   <?php endif; ?>
 

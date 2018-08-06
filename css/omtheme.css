@@ -551,36 +551,35 @@ table.dataTable tbody tr {
 .privacy-policy-info .buttonBack {
   color: #7d7d7d; }
 
-.form-cont {
-  padding: 40px; }
-  .form-cont label {
+.form-cont label {
+  width: 100%;
+  font-family: 'Lato Light';
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold; }
+  .form-cont label span {
     width: 100%;
-    font-family: 'Lato Light';
-    font-size: 16px;
-    color: #000000;
-    font-weight: bold; }
-    .form-cont label span {
+    height: 45px; }
+    .form-cont label span input,
+    .form-cont label span select {
       width: 100%;
-      height: 45px; }
-      .form-cont label span input,
-      .form-cont label span select {
-        width: 100%;
-        height: 45px;
-        margin-top: 15px;
-        padding: 0px 10px; }
-      .form-cont label span .input-form {
-        border: 1.5px solid #bbb; }
-      .form-cont label span textarea {
-        width: 100%;
-        margin-top: 15px;
-        padding: 10px;
-        border: 1.5px solid #bbb; }
-  .form-cont address {
-    font-family: 'Lato Light';
-    font-size: 16px;
-    color: #000000;
-    font-weight: 500;
-    text-align: justify; }
+      height: 45px;
+      margin-top: 15px;
+      padding: 0px 10px; }
+    .form-cont label span .input-form {
+      border: 1.5px solid #bbb; }
+    .form-cont label span textarea {
+      width: 100%;
+      margin-top: 15px;
+      padding: 10px;
+      border: 1.5px solid #bbb; }
+
+.form-cont address {
+  font-family: 'Lato Light';
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  text-align: justify; }
 
 @media (max-width: 480px) {
   .form-cont .logo-mob,

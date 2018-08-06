@@ -2,9 +2,9 @@
       <div class="row">
       	<div class="col-12 col-sm-12 col-md-12 col-lg-12 px-5 privacy-policy-info">
 
-      		<div class="px-5" style="text-align: justify;">      			
+      		<div class="px-5" style="text-align: justify;">
 	      		<button class="buttonBack">&larr;Back</button>
-	  
+
 	      		<p class="p-welcome">Welcome to www.optionmetrics.com (the “Website”) operated by OptionMetrics LLC, a New York limited liability company (“Operator”, “we”, “our”, or “us”). This privacy policy (the “Privacy Policy”) is intended to inform you about how Operator collects and uses your personally identifiable information (“PII”) and other information in operating the Website.</p>
       		</div>
 
@@ -53,7 +53,7 @@
 				<p>Operator takes steps consistent with commercially reasonable industry standards to secure any PII collected from you from loss, misuse, unauthorized access and destruction while under our control. However, please note that despite our efforts to protect information provided to us, we cannot guarantee that such information will not be lost, disclosed or accessed by accidental circumstances or by the unauthorized acts of others.</p>
 
 				<br>
-			
+
 				<h5> Does Operator provide links to other websites?</h5>
 
 				<p>Operator may provide links to other websites or resources. The collection and use of your PII and other information by such websites shall be subject to the policies and procedures of such websites and not the Privacy Policy.</p>

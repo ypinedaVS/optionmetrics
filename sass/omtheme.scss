@@ -21,84 +21,16 @@
 
 .section-title {
   color: $blue;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   &.mini {
     font-size: 30px;
   }
 }
 
-// ==============================
-
-// .entries {
-//   width:calc(100% - 80px);
-//   max-width:800px;
-//   margin:auto;
-//   position: relative;
-//   left:-5px;
-//   .entry {
-//     width:calc(50% - 80px);
-//     float:left;
-//     padding:20px;
-//     clear:both;
-//     text-align:right;
-//     &:not(:first-child) {
-//       margin-top:-60px;
-//     }
-//     .title {
-//       font-size:32px;
-//       margin-bottom:12px;
-//       position: relative;
-//       color:$blue;
-//       &:before {
-//         content: '';
-//         position: absolute;
-//         width:8px;
-//         height:8px;
-//         border:4px solid $blue;
-//         background-color:#1D1D1D;
-//         border-radius:100%;
-//         top:50%;
-//         transform:translateY(-50%);
-//         right:-73px;
-//         z-index:1000;
-//       }
-//       &.big:before {
-//         width:24px;
-//         height:24px;
-//         transform:translate(8px,-50%);
-//       }
-//     }
-//     .body {
-//       color:#aaa;
-//       p {
-//         line-height:1.4em;
-//       }
-//     }
-//     &:nth-child(n) {
-//       text-align:left;
-//       float:right;
-//       .title {
-//         &:before {
-//           left:-63px;
-//         }
-//         &.big:before {
-//           transform:translate(-8px,-50%);
-//         }
-//       }
-//     }
-//   }
-// }
-
-// =================================
-
-
 .section-text {
   color: $grey;
   font-size: 15px;
-  @media (min-width: 768px) {
-    font-size: 15px;
-  }
 }
 
 .qualification-text {
@@ -599,41 +531,10 @@ table {
   }
 }
 
-.page-section-title,
-.partner-name,
-.partner-position,
-.partner-description {
-  font-weight: bold;
-  color: $blue-dark;
-  font-size: 40px;
-}
-// .partner-form-title {
-//   font-size: 33px;
-//   &+.partner-form-description {
-//     font-size: 18px;
-//     font-weight: normal;
-//     font-family: 'Montserrat Light';
-//   }
-// }
-
 .partner-wrapper {
   padding: 30px 20px;
   background-color: lighten($grey, 75%);
   border-radius: 10px;
-  // .partner-name {
-  //   font-size: 18px;
-  //   &+.partner-position {
-  //     font-weight: normal;
-  //     font-size: 12px;
-  //     text-transform: uppercase;
-  //     font-style: italic;
-  //     &+.partner-description {
-  //       font-weight: normal;
-  //       font-size: 16px;
-  //       color: $text;
-  //     }
-  //   }
-  // }
 }
 .mt-70 {
   margin-top: 70px;
@@ -679,8 +580,8 @@ table {
       background-color: #f7f7f7;
     }
     img {
-      width: 15%;
-      height: 15%;
+      width: 70px;
+      height: 70px;
     }
     p {
       margin: auto 0;
@@ -729,21 +630,13 @@ table {
     width: 100%;
   }
 }
-// .tab-content {
-//   .page-feature-text {
-//     letter-spacing: 1.5px;
-//   }
-// }
-// @media (max-width: 480px) {
-//   .tab-content {
-//     text-align: center;
-//   }
-// }
-// @media (max-width: 768px) {
-//   .tab-content {
-//     text-align: center;
-//   }
-// }
+
+.mx-0.CO-body {
+  @media (min-width: 992px) {
+    margin-left: -50px !important;
+    margin-right: -50px !important;
+  }
+}
 .privacy-policy-info {
   .buttonBack {
     cursor: pointer;

@@ -14,8 +14,9 @@
     if( $papers->have_posts() ) :
       while( $papers->have_posts() ) :
         $papers->the_post();
+        $link = get_post_meta( get_the_ID(), 'white_papers_url', true );
   ?>
-    <p class="text-blue montserrat-medium p-3"><?php the_title(); ?></p>
+    <a href="<?php echo $link; ?>" target="_blank" class="text-blue montserrat-medium p-3 d-block"><?php the_title(); ?></a>
     <?php
       if( $i < $papers->post_count ) :
         echo '<hr />';

@@ -19,9 +19,12 @@
     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Featured News And Events" class="img-fluid w-100 mb-3" />
   </div>
   <div class="col-md-6 col-lg-7 text-center text-md-left">
-    <p class="text-blue-dark montserrat-medium h4"><?php the_title(); ?></p>
+    <p class="text-blue-dark montserrat-medium"><?php the_title(); ?></p>
     <p class="text-grey lato-regular"><?php echo get_the_content(); ?></p>
-    <a href="<?php the_permalink(); ?>" class="btn btn-link montserrat-medium pl-0 text-blue-dark">READ MORE</a>
+    <a href="<?php the_permalink(); ?>" class="btn btn-link montserrat-medium pl-0 text-blue-dark">
+      READ MORE
+      <span class="fa fa-angle-double-right"></span>
+    </a>
   </div>
 </div>
 <?php endwhile; endif; ?>

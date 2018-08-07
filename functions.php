@@ -64,6 +64,15 @@ function gtdu($path)
 add_action( 'wp_ajax_nopriv_do_research_ajax', 'research_send_posts' );
 add_action( 'wp_ajax_do_research_ajax', 'research_send_posts' );
 
+function wpb_linkedin_share_after( $content )
+{
+  $sharecode .= '<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script> <script type="IN/Share" data-counter="top"></script>';
+  $newcontent = $content . $sharecode;
+
+  return $newcontent; 
+}
+add_filter('the_content', 'wpb_linkedin_share_after');
+
 function research_send_posts()
 {
   $year = absint($_POST['year']);

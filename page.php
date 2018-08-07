@@ -80,13 +80,8 @@
   <?php if( is_page( 'research' ) ) get_template_part( 'partials/page', 'research' ); ?>
   <!-- /Research page -->
 
- <!-- Privacy Policy Page-->
-  <?php if( is_page( 'privacy-policy') ) : ?>
-  <div class="container">
-    <?php get_template_part( 'privacy', 'policy-page '); ?>
-  </div>
-  <?php endif; ?>
-
+  <!-- Privacy Policy Page-->
+  <?php if( is_page( 'privacy-policy') ) get_template_part( 'partials/privacy' ); ?>
   <!-- /Privacy Policy Page -->
 
 <?php get_footer(); ?>

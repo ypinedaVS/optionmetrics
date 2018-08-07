@@ -13,9 +13,9 @@
   $args = array(
     'category_name' => 'home-slider',
     'tax_query'     => array( array(
-      'taxonomy'  => 'post_tag',
-      'field'     => 'slug',
-      'terms'     => $tag
+      'taxonomy'    => 'post_tag',
+      'field'       => 'slug',
+      'terms'       => $tag
     )));
     $header = get_posts( $args );
     setup_postdata( $header[0] );

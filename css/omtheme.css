@@ -281,6 +281,13 @@ table.dataTable tbody tr {
   border-bottom: 20px solid whitesmoke;
   border-radius: 5px; }
 
+.privacy h5 {
+  color: #0D3049;
+  opacity: 0.5; }
+
+.privacy p strong {
+  color: #0D3049; }
+
 .partners-indicators {
   top: 310px;
   bottom: auto !important; }

@@ -320,6 +320,18 @@ table {
   border-radius: 5px;
 }
 
+.privacy {
+  h5 {
+    color: $blue;
+    opacity: 0.5;
+  }
+  p {
+    strong {
+      color: $blue;
+    }
+  }
+}
+
 .partners-indicators {
   top: 310px;
   bottom: auto !important;

@@ -1,5 +1,5 @@
 <?php
-  $year_param = $_GET['query_year'] ? $_GET['query_year'] : date('Y');
+  $year_param = isset($_GET['query_year']) ? $_GET['query_year'] : date('Y');
   $year = date('Y');
   const LAST = 2002;
 ?>

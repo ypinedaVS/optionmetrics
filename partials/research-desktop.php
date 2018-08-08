@@ -39,7 +39,7 @@
 </table>
 
 <?php
-  $sc_args = '[wp-datatable id="research-desktop"]
+  $sc_args = '[wp-datatable id="research-desktop" fat="LEVEL"]
     bDestroy: true,
     search: true,
     responsive: true,

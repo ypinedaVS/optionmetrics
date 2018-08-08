@@ -52,7 +52,7 @@
   </div>
 </div>
 <?php
-  $sc_args = '[wp-datatable id="events"]
+  $sc_args = '[wp-datatable id="events" fat="LEVEL"]
     search: true,
     responsive: true,
     pageLength: 4,

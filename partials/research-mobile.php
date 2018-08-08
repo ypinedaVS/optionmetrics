@@ -32,7 +32,7 @@
 </table>
 
 <?php
-  $sc_args = '[wp-datatable id="research-mobile"]
+  $sc_args = '[wp-datatable id="research-mobile" fat="LEVEL"]
     search: true,
     responsive: true,
     pageLength: 6,

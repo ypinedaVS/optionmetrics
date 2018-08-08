@@ -71,7 +71,7 @@
               <span class="fa fa-download"></span>
             </a>
           <?php elseif( $cat == 'careers' ) : ?>
-            <a href="mailto:user@email.com" class="btn btn-link text-blue montserrat-medium small">
+            <a href="mailto:info@optionmetrics.com" class="btn btn-link text-blue montserrat-medium small">
               Want to apply? Send us an email
             </a>
           <?php endif; ?>

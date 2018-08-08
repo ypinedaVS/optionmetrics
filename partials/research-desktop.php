@@ -1,6 +1,6 @@
 <?php
   $featured = get_term_by( 'name', 'featured', 'post_tag' );
-  $year = $_GET['query_year'] ? $_GET['query_year'] : date('Y');
+  $year = isset($_GET['query_year']) ? $_GET['query_year'] : date('Y');
 
   $args = array(
     'category_name'     => 'research',

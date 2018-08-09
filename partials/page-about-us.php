@@ -12,7 +12,7 @@
                 <p class="text-blue p montserrat-medium mb-4">We use a common language all practitioners understand</p>
               </div>
               <div class="col-12">
-                <p class="text-grey latoregulart p">Black-Scholes-Merton implied volatilities are standard for quoting options prices. Differences across delta (smile or skew) and across time-to-expiration (term structure) provide ample fodder for investigating arbitrage and relative value opportunities.</p>
+                <p class="text-grey lato-regular p">Black-Scholes-Merton implied volatilities are standard for quoting options prices. Differences across delta (smile or skew) and across time-to-expiration (term structure) provide ample fodder for investigating arbitrage and relative value opportunities.</p>
               </div>
             </div>
           </div>

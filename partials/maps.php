@@ -62,4 +62,7 @@
     </div>
   <?php endif; ?>
   </div>
+  <div class="col-12 col-md-8 offset-md-2 d-none optigraph-image my-5">
+    <img src="<?php gtdu('/assets/Continouos_illustration.PNG') ?>" alt="optigraph image" class="img-fluid w-100" />
+  </div>
 </div>

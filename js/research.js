@@ -41,6 +41,7 @@ jQuery(document).ready(function($) {
       $('#nav-tab-optigraph').trigger('click')
       $('.CO-body-mobile').addClass('d-none')
       $('.CO-body > div.__i').removeClass('d-md-block')
+      $('.optigraph-image').removeClass('d-none')
     }
   }
 
@@ -61,9 +62,11 @@ jQuery(document).ready(function($) {
         $('.CO-body-mobile').removeClass('d-none')
       }
       $('.CO-body > div.__i').addClass('d-md-block')
+      $('.optigraph-image').addClass('d-none')
     } else {
       $('.CO-body-mobile').addClass('d-none')
       $('.CO-body > div.__i').removeClass('d-md-block')
+      $('.optigraph-image').removeClass('d-none')
     }
   })
 

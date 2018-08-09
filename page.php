@@ -84,6 +84,10 @@
   <?php if( is_page( 'privacy-policy') ) get_template_part( 'partials/privacy' ); ?>
   <!-- /Privacy Policy Page -->
 
+  <!-- Terms of use Page-->
+  <?php if( is_page( 'terms-of-use') ) get_template_part( 'partials/terms-of-use' ); ?>
+  <!-- /Terms of use Page -->
+
 <?php get_footer(); ?>
 
 <script type="text/javascript">

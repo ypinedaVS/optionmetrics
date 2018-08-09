@@ -8,6 +8,7 @@
   if( is_page( 'contact' ) ) $tag = 'contact';
   if( is_page( 'privacy-policy' ) ) $tag = 'privacy-policy';
   if( is_page( 'qualification-process' ) ) $tag = 'qualification-process';
+  if( is_page( 'terms-of-use' ) ) $tag = 'terms-of-use';
   if( is_single() ) $tag = get_the_category()[0]->slug;
 
   $args = array(

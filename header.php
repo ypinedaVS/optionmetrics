@@ -25,14 +25,14 @@
           'items_wrap'       => '<ul class="navbar-nav ml-auto">%3$s</ul>'
         )); ?>
         <script>
-          jQuery(document).ready(function($) {
-            $('ul.navbar-nav > li:first')
-              .children()
-              .append('<span id="search-icon" class="fa fa-search position-fixed" style="right:15px"></span>')
-            $('ul.navbar-nav > li:last')
-              .children()
-              .html('<span class="fa fa-search"></span>')
-          })
+          // jQuery(document).ready(function($) {
+          //   $('ul.navbar-nav > li:first')
+          //     .children()
+          //     .append('<span id="search-icon" class="fa fa-search position-fixed" style="right:15px"></span>')
+          //   $('ul.navbar-nav > li:last')
+          //     .children()
+          //     .html('<span class="fa fa-search"></span>')
+          // })
         </script>
       </div>
     </nav>

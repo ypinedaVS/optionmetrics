@@ -8,13 +8,13 @@
       <?php get_template_part( 'partials/cpu' ); ?>
     </div>
     <div class="row">
-      <div class="col-12 px-lg-0">
+      <div class="col-12 px-xl-0">
         <p class="section-title montserrat-regular text-center mb-4">Data Analysis Products</p>
       </div>
-      <div class="col-12 px-lg-0">
+      <div class="col-12 px-xl-0">
         <?php get_template_part( 'partials/maps' ); ?>
       </div>
-      <div class="col-12 mb-5 px-lg-0">
+      <div class="col-12 mb-5 px-xl-0">
         <?php get_template_part( 'partials/features', 'home' ); ?>
       </div>
     </div>

@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
   if (getQueryVariable('query_year') != false) {
     const top = $('#research-top').offset().top
 
-    $('html, body').stop().animate({ scrollTop: top }, 1000)
+    // $('html, body').stop().animate({ scrollTop: top }, 1000)
   }
 
   if (getQueryVariable('c') != false) {
@@ -39,6 +39,8 @@ jQuery(document).ready(function($) {
     $('html, body').stop().animate({ scrollTop: top }, 1000)
     if (getQueryVariable('t') == 'optigraph') {
       $('#nav-tab-optigraph').trigger('click')
+      $('.CO-body-mobile').addClass('d-none')
+      $('.CO-body > div.__i').removeClass('d-md-block')
     }
   }
 
@@ -52,6 +54,18 @@ jQuery(document).ready(function($) {
     }
     $('html, body').stop().animate({ scrollTop: top }, 1000)
   }
+
+  $('#nav-tab-ivydb, #nav-tab-optigraph').on('click', function() {
+    if ($(this).attr('name') == 'ivy') {
+      if ($(window).innerWidth() < 768) {
+        $('.CO-body-mobile').removeClass('d-none')
+      }
+      $('.CO-body > div.__i').addClass('d-md-block')
+    } else {
+      $('.CO-body-mobile').addClass('d-none')
+      $('.CO-body > div.__i').removeClass('d-md-block')
+    }
+  })
 
   $('.timeline-year').on('click', function(e) {
     const year = $(this).data('year')

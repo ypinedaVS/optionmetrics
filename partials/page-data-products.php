@@ -15,7 +15,7 @@
     <!-- US -->
     <div class="row d-flex align-items-center justify-content-between mb-5 pt-5 mx-0 CO-body" >
       <!-- Accordion -->
-      <div class="col-xs-12 col-md-6 d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-xs-12 col-md-6 d-none d-md-block __i">
         <div id="accordion">
           <div class="card content-nav-graph">
             <div id="headingOne" class="orange1">
@@ -96,7 +96,7 @@
       </div>
 
       <!-- Images -->
-      <div class="col-md-6 tab-content d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-md-6 tab-content d-none d-md-block __i">
         <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active comprehensive" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
 
         <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane accurate" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
@@ -109,7 +109,7 @@
       </div>
 
       <!-- view responsive -->
-      <div class="col-sm-12 d-md-none d-xl-none d-lg-none d-block d-sm-block px-0 section-text">
+      <div class="col-sm-12 d-md-none px-0 section-text CO-body-mobile">
         <div id="accordionUno">
           <div class="card content-nav-graph">
             <div id="heading1" class="orange1">
@@ -193,7 +193,7 @@
     <!-- CANADA -->
     <div class="row d-flex align-items-center justify-content-between mb-5 pt-5 mx-0 CO-body" >
       <!-- Accordion -->
-      <div class="col-xs-12 col-md-6 col-xl-6 d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-xs-12 col-md-6 col-xl-6 d-none d-md-block __i">
         <div id="accordion2">
           <div class="card content-nav-graph">
             <div id="headingSix" class="orange1">
@@ -272,7 +272,7 @@
       </div>
 
       <!-- Images -->
-      <div class="col-md-6 col-xl-6 tab-content d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-md-6 col-xl-6 tab-content d-none d-md-block __i">
         <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active comprehensive" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
         <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane accurate" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
         <img src="<?php gtdu('/assets/Continouos_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane continouos" id="continouos" role="tabpanel" aria-labelledby="continouos-tab">
@@ -281,7 +281,7 @@
       </div>
 
       <!-- view responsive -->
-      <div class="col-sm-12  d-md-none d-xl-none d-lg-none d-block d-sm-block px-0">
+      <div class="col-sm-12 d-md-none px-0 section-text CO-body-mobile">
         <div id="accordionDos">
           <div class="card content-nav-graph">
             <div id="heading6" class="orange1">
@@ -363,7 +363,7 @@
     <!-- EUROPE -->
     <div class="row d-flex align-items-center justify-content-between mb-5 pt-5 mx-0 CO-body" >
       <!-- Accordion -->
-      <div class="col-xs-12 col-md-6 col-xl-6 d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-xs-12 col-md-6 col-xl-6 d-none d-md-block __i">
         <div id="accordion3">
           <div class="card content-nav-graph">
             <div id="headingEleven" class="orange1">
@@ -442,7 +442,7 @@
       </div>
 
       <!-- Images -->
-      <div class="col-md-6 col-xl-6 tab-content d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-md-6 col-xl-6 tab-content d-none d-md-block __i">
         <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active comprehensive" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
         <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane accurate" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
         <img src="<?php gtdu('/assets/Continouos_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane continouos" id="continouos" role="tabpanel" aria-labelledby="continouos-tab">
@@ -451,7 +451,7 @@
       </div>
 
       <!-- view responsive -->
-      <div class="col-sm-12 d-md-none d-xl-none d-lg-none d-block d-sm-block px-0">
+      <div class="col-sm-12 d-md-none px-0 section-text CO-body-mobile">
         <div id="accordionTres">
           <div class="card content-nav-graph">
             <div id="heading11" class="orange1">
@@ -533,7 +533,7 @@
     <!-- ASIA -->
     <div class="row d-flex align-items-center justify-content-between mb-5 pt-5 mx-0 CO-body">
       <!-- Accordion -->
-      <div class="col-xs-12 col-md-6 col-xl-6 d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-xs-12 col-md-6 col-xl-6 d-none d-md-block __i">
         <div id="accordion4">
           <div class="card content-nav-graph">
             <div id="headingSixteen" class="orange1">
@@ -612,7 +612,7 @@
       </div>
 
       <!-- Images -->
-      <div class="col-md-6 col-xl-6 tab-content d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-md-6 col-xl-6 tab-content d-none d-md-block __i">
         <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active comprehensive" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
         <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane accurate" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
         <img src="<?php gtdu('/assets/Continouos_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane continouos" id="continouos" role="tabpanel" aria-labelledby="continouos-tab">
@@ -621,7 +621,7 @@
       </div>
 
       <!-- view responsive -->
-      <div class="col-sm-12 d-md-none d-xl-none d-lg-none d-block d-sm-block px-0">
+      <div class="col-sm-12 d-md-none px-0 section-text CO-body-mobile">
         <div id="accordionCuatro">
           <div class="card content-nav-graph">
             <div id="heading16" class="orange1">
@@ -703,7 +703,7 @@
     <!-- GLOBAL -->
     <div class="row d-flex align-items-center justify-content-between mb-3 pt-5 mx-0 CO-body" >
       <!-- Accordion -->
-      <div class="col-xs-12 col-md-6 col-xl-6 d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-xs-12 col-md-6 col-xl-6 d-none d-md-block __i">
         <div id="accordion5">
           <div class="card content-nav-graph">
             <div id="headingTwentyone" class="orange1">
@@ -782,7 +782,7 @@
       </div>
 
       <!-- Images -->
-      <div class="col-md-6 col-xl-6 tab-content d-sm-none d-none d-lg-block d-xl-block d-md-block">
+      <div class="col-md-6 col-xl-6 tab-content d-none d-md-block __i">
         <img src="<?php gtdu('/assets/Comprehensive_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane active comprehensive" id="comprehensive" role="tabpanel" aria-labelledby="comprehensive-tab">
         <img src="<?php gtdu('/assets/Accurate_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane accurate" id="accurate" role="tabpanel" aria-labelledby="accurate-tab">
         <img src="<?php gtdu('/assets/Continouos_illustration.PNG'); ?>" alt="Graph" class="img-fluid tab-pane continouos" id="continouos" role="tabpanel" aria-labelledby="continouos-tab">
@@ -791,7 +791,7 @@
       </div>
 
       <!-- view responsive -->
-      <div class="col-sm-12 d-md-none d-xl-none d-lg-none d-block d-sm-block px-0">
+      <div class="col-sm-12 d-md-none px-0 section-text CO-body-mobile">
         <div id="accordeonCinco">
           <div class="card content-nav-graph">
             <div id="heading21" class="orange1">

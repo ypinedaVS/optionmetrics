@@ -63,7 +63,7 @@
             <div class="col-7 col-xl-9"><?php echo get_post_meta(get_the_ID(), 'careers_start_date', true); ?></div>
           </div>
         <?php endif; ?>
-        <div class="_content lato-regular text-grey px-3 mt-4 text-center">
+        <div class="_content lato-regular text-grey px-3 mt-4">
           <?php the_content(); ?>
           <?php if( $cat == 'research' ) : ?>
             <a href="<?php echo get_post_meta( get_the_ID(), 'research_url', true ); ?>" target="_blank" class="btn btn-link text-blue montserrat-medium small text-center d-block">
@@ -74,13 +74,26 @@
             <a href="mailto:info@optionmetrics.com" class="btn btn-link text-blue montserrat-medium small">
               Want to apply? Send us an email
             </a>
+            <script>
+              jQuery(document).ready(function($) {
+                setTimeout(function() {
+                  $('.IN-widget').css({
+                    'position': 'absolute',
+                    'bottom': '-50px',
+                  })
+                }, 200)
+              })
+            </script>
           <?php endif; ?>
         </div>
         <?php if( $cat == 'research' ) : ?>
         <script>
           jQuery(document).ready(function($) {
             setTimeout(function() {
-              $('.IN-widget').css({ 'position': 'relative', 'top': '120px' })
+              $('.IN-widget').css({
+                'position': 'relative',
+                'top': '120px'
+              })
             }, 500)
           })
         </script>
